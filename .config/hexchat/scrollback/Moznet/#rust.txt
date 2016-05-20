@@ -1,0 +1,507 @@
+T 1463775121 18<mythmon18>	relevant section of the book: https://doc.rust-lang.org/book/type-aliases.html
+T 1463775151 23*	kheadley (uid159604@moz-j5q8a1.highgate.irccloud.com23) has joined
+T 1463775191 24*	staticassert has quit (Quit: http://www.mibbit.com ajax IRC Client)
+T 1463775202 23*	mib_1u920n (Mibbit@moz-vv5125.dynamic.mtsallstream.net23) has joined
+T 1463775260 24*	jonmorehouse has quit (Ping timeout: 121 seconds)
+T 1463775282 23*	Ralith (ralith@moz-itpr0k.customer.broadstripe.net23) has joined
+T 1463775290 18<schirtze18>	would 10..0 be a decrementing iterator?
+T 1463775296 24*	conrad2 has quit (Ping timeout: 121 seconds)
+T 1463775315 18<scott18>	schirtze: nope, use (0..10).rev()
+T 1463775320 18<tilpner18>	playbot: (10..0).collect::<Vec<_>>() // no
+T 1463775321 24*	mindtree has quit (Ping timeout: 121 seconds)
+T 1463775321 -18playbot/22#rust-	[]
+T 1463775358 18<schirtze18>	i propose 10..0 become syntatic sugar for (0..10).rev()
+T 1463775393 18<tilpner18>	It can't.
+T 1463775400 18<schirtze18>	why not?
+T 1463775415 24*	28zz_NameNotFound is now known as 18NameNotFound
+T 1463775418 18<tilpner18>	Because 0..10 is a different type than (0..10).rev()
+T 1463775434 23*	mrmcq2u (mrmcq2u@moz-bke.qcc.76.109.IP23) has joined
+T 1463775435 23*	durka42 (durka42@moz-c5p.jet.130.158.IP23) has joined
+T 1463775438 18<schirtze18>	not sure I follow
+T 1463775445 18<tilpner18>	And what about a..b? How would you know which is larger?
+T 1463775494 18<schirtze18>	but shouldn't 10..0 generate a decrementing iterator?
+T 1463775499 18<steveklabnik18>	it is not
+T 1463775529 18<schirtze18>	what does it turn out to be then? because right now I have a..b where a>b and it compiles.
+T 1463775534 18<scott18>	schirtze: it would make all range iterators less efficient if you inserted checks whether b < a
+T 1463775538 18<steveklabnik18>	playbot: (10..0).to_vec()
+T 1463775539 -18playbot/22#rust-	<anon>:9:17: 9:23 error: no method named `to_vec` found for type `core::ops::Range<_>` in the current scope
+T 1463775539 -18playbot/22#rust-	<anon>:9         (10..0).to_vec()
+T 1463775539 -18playbot/22#rust-	output truncated; full output at: http://bit.ly/20gxqHP
+T 1463775541 24*	ubsan has quit (Connection closed)
+T 1463775546 18<steveklabnik18>	playbot: (10..0).into_iter().to_vec()
+T 1463775547 -18playbot/22#rust-	<anon>:9:29: 9:35 error: no method named `to_vec` found for type `core::ops::Range<_>` in the current scope
+T 1463775547 -18playbot/22#rust-	<anon>:9         (10..0).into_iter().to_vec()
+T 1463775547 -18playbot/22#rust-	output truncated; full output at: http://bit.ly/1W6Y1c1
+T 1463775550 18<steveklabnik18>	what is going on
+T 1463775554 24*	creationix has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+T 1463775563 18<bluss18>	it would be possible to do this if ranges were not iterators (but still iterable)
+T 1463775566 18<steveklabnik18>	playbot: playbot 10..0.collect::<Vec<i32>>()
+T 1463775567 -18playbot/22#rust-	<anon>:9:17: 9:19 error: expected one of `!`, `.`, `::`, `;`, `{`, `}`, or an operator, found `10`
+T 1463775567 -18playbot/22#rust-	<anon>:9         playbot 10..0.collect::<Vec<i32>>()
+T 1463775567 -18playbot/22#rust-	output truncated; full output at: http://bit.ly/20gxkjC
+T 1463775570 18<tilpner18>	(Look above, steveklabnik)
+T 1463775572 18<steveklabnik18>	..... i am gonna quit now
+T 1463775575 18<steveklabnik18>	tilpner: lol
+T 1463775577 18<steveklabnik18>	sigh
+T 1463775610 18<schirtze18>	so what is the best idiomatic way to right what is essentially a decrementing loop?
+T 1463775616 18<steveklabnik18>	use .rev()
+T 1463775660 23*	ubsan (ubsan@moz-cc6.3fu.114.66.IP23) has joined
+T 1463775668 23*	rnestler1 (rnestler@moz-ssf627.dclient.hispeed.ch23) has joined
+T 1463775703 23*	RegulationD (RegulationD@moz-jpg5s7.ga.charter.com23) has joined
+T 1463775720 23*	minibikini (anonymous@moz-m4f.6rh.4.171.IP23) has joined
+T 1463775737 23*	ubsan__ (ubsan@moz-fnb1om.5h7h.485o.fb90.2607.IP23) has joined
+T 1463775835 24*	rnestler has quit (Ping timeout: 121 seconds)
+T 1463775851 18<apajx18>	Isn't there an RFC or plans in the works to add a "step value" to range arguments? Effectively making things like `10..0:-1` work as expected?
+T 1463775854 23*	blackgoat (blackgoat@moz-stj.iu0.157.221.IP23) has joined
+T 1463775863 24*	recurrence has quit (Ping timeout: 121 seconds)
+T 1463775870 24*	ubsan_ has quit (Ping timeout: 121 seconds)
+T 1463775873 18<steveklabnik18>	yeah, there's been talk about step_by
+T 1463775879 23*	tkellen (tkellen@moz-btubdf.vt.comcast.net23) has joined
+T 1463775888 18<schirtze18>	I would really enjoy a feature like that.
+T 1463775899 18<schirtze18>	big plus for readability
+T 1463775908 24*	ubsan has quit (Ping timeout: 121 seconds)
+T 1463775930 24*	owickstrom has quit (Connection closed)
+T 1463775944 24*	arroyoc has quit (Client exited)
+T 1463775949 18<apajx18>	I think a bigger benefit there is the amount of flexibility, kind of annoying if you want to filter out all the evens and _then_ iterator over them, as opposed to `10..0:2`
+T 1463775959 23*	jonmorehouse (jonmorehous@moz-l7c.sbr.3.216.IP23) has joined
+T 1463775970 18<apajx18>	err `0..10:2`
+T 1463775977 24*	ubsan__ has quit (Quit: <3)
+T 1463775985 23*	ubsan (ubsan@moz-cc6.3fu.114.66.IP23) has joined
+T 1463776020 23*	OmniMancer (OmniMancer@moz-kf2.7is.57.122.IP23) has joined
+T 1463776033 23*	ubsan_ (ubsan@moz-cc6.3fu.114.66.IP23) has joined
+T 1463776040 24*	pylbrecht has quit (Client exited)
+T 1463776057 23*	renderful (renderful@moz-atg40s.co.comcast.net23) has joined
+T 1463776060 18<steveklabnik18>	i'm not sure that syntax was ever proposed, it will be 10..0.step_by(-1)
+T 1463776067 18<steveklabnik18>	last i checked
+T 1463776117 23*	osa1_ (omer@moz-bs805a.cable.virginm.net23) has joined
+T 1463776122 23*	mayhew (mayhew@moz-m0qj0i.ns.bellaliant.net23) has joined
+T 1463776125 24*	osa1 has quit (Connection closed)
+T 1463776158 24*	postmodern has quit (Ping timeout: 121 seconds)
+T 1463776189 18<_habnabit18>	but is that [10, 0) or (10, 0]
+T 1463776216 23*	mpark (mpark@moz-edrulj.static.monkeybrains.net23) has joined
+T 1463776231 23*	ubsan__ (ubsan@moz-6j08f3.5h7h.485o.fb90.2607.IP23) has joined
+T 1463776231 24*	aldeka has quit (Connection closed)
+T 1463776233 23*	aldeka (quassel@moz-qqf.of6.243.162.IP23) has joined
+T 1463776235 18<schirtze18>	_habnabit, that's a good point
+T 1463776251 24*	mib_1u920n has quit (Quit: http://www.mibbit.com ajax IRC Client)
+T 1463776255 18<schirtze18>	in fact I think you just solved an issue that I
+T 1463776257 18<apajx18>	steveklabnik: yeah the syntax i used was just "on the spot invented" because I couldn't remember the actual syntax.
+T 1463776260 18<schirtze18>	 have been staring at
+T 1463776270 24*	ubsan__ has quit (Quit: <3)
+T 1463776277 23*	ubsan__ (ubsan@moz-cc6.3fu.114.66.IP23) has joined
+T 1463776282 24*	ubsan_ has quit (Ping timeout: 121 seconds)
+T 1463776282 24*	ubsan has quit (Connection closed)
+T 1463776288 18<apajx18>	_habnabit: i would expect it to always be closed on the left open on the right
+T 1463776302 23*	thiblahute_ (tsaunier@moz-nb9.qgd.162.190.IP23) has joined
+T 1463776306 23*	zhoeon (fc@moz-8jak3u.cpe.pppoe.ca23) has joined
+T 1463776307 18<_habnabit18>	apajx, .rev() will swap that, though
+T 1463776318 24*	thiblahute_ has quit (Quit: Ex-Chat)
+T 1463776323 24*	renderful has quit (Ping timeout: 121 seconds)
+T 1463776325 23*	thiblahute_ (tsaunier@moz-nb9.qgd.162.190.IP23) has joined
+T 1463776330 18<_habnabit18>	so are 0..10.rev() and 10..0.step_by(-1) the same?
+T 1463776343 18<apajx18>	does it? [0,9).rev() goes to [8, -1)
+T 1463776347 18<apajx18>	as far as I understand
+T 1463776383 18<schirtze18>	I thought [0, 9).rev() would be (9, 0]
+T 1463776401 18<_habnabit18>	playbot, 0..10.rev().collect::<Vec<_>>()
+T 1463776402 -18playbot/22#rust-	<anon>:9:15: 9:18 error: no method named `rev` found for type `_` in the current scope
+T 1463776402 -18playbot/22#rust-	<anon>:9         0..10.rev().collect::<Vec<_>>()
+T 1463776402 -18playbot/22#rust-	output truncated; full output at: http://bit.ly/1W6Ztep
+T 1463776422 24*	andre_ has quit (Quit: leaving)
+T 1463776426 18<_habnabit18>	playbot, 0usize..10.rev().collect::<Vec<_>>()
+T 1463776427 -18playbot/22#rust-	<anon>:9:20: 9:23 error: no method named `rev` found for type `_` in the current scope
+T 1463776427 -18playbot/22#rust-	<anon>:9         0usize..10.rev().collect::<Vec<_>>()
+T 1463776427 -18playbot/22#rust-	output truncated; full output at: http://bit.ly/20gAsMd
+T 1463776506 19*	Now talking on 22#rust
+T 1463776506 22*	Topic for 22#rust is: Rust general discussion | Current release: 1.8 | | Playground https://play.rust-lang.org/ | Forum  https://users.rust-lang.org/ | New user channel: #rust-beginners  | Conduct https://www.rust-lang.org/conduct.html | Logs  https://botbot.me/mozilla/rust
+T 1463776506 22*	Topic for 22#rust set by 26mbrubeck!sid61@moz-2pjnuf.0j4i.jtu0.0101.2620.IP (24Thu Apr 14 19:00:30 2016)
+T 1463776514 18<jdavis_18>	I can't compile postgres-extension.rs because it can't find rustc_front. I searched around, and it seems like other people hit the same issue, but was resolved by getting a newer nightly (I have the latest so I don't think that's the problem). Any suggestions?
+T 1463776522 18<apajx18>	so yeah in the above example, [0,10) becomes (10, 0] (stepped down) or [9, -1) (stepped down)
+T 1463776528 24*	minibikini has quit (Client exited)
+T 1463776549 18<dylukes18>	Ok...
+T 1463776556 18<dylukes18>	about 90% sure hyper is malforming http requests :\
+T 1463776560 24*	jonmorehouse has quit (Ping timeout: 121 seconds)
+T 1463776566 24*	khj has quit (A TLS packet with unexpected length was received.)
+T 1463776578 18<dylukes18>	I'm trying the exact same simple GETs on the Slack API and it works everywhere else... Looking at headers...
+T 1463776580 24*	durka42 has quit (Client exited)
+T 1463776594 18<OmniMancer18>	https://is.gd/3baaBB
+T 1463776595 18<apajx18>	dylukes: fiddler to catch the hyper requests in flight?
+T 1463776602 18<apajx18>	or wireshark or whatever
+T 1463776614 18<dylukes18>	On OS X, so yeah, wireshark.
+T 1463776620 23*	jonmorehouse (jonmorehous@moz-l7c.sbr.3.216.IP23) has joined
+T 1463776620 18<cite-reader18>	Maybe socat.
+T 1463776621 23*	stouset (stephen@moz-tl2.7si.9.216.IP23) has joined
+T 1463776623 18<_habnabit18>	mitmproxy
+T 1463776708 18<steveklabnik18>	jdavis_: are you _sure_ you have the latest nightly?
+T 1463776725 18<dylukes18>	Well, can't do much on the wire since it's HTTPS only.
+T 1463776734 18<_habnabit18>	mitmproxy can do it
+T 1463776735 18<dylukes18>	But it's being established correctly at least.
+T 1463776741 18<dylukes18>	I don't control the remote endpoint.
+T 1463776745 18<jdavis_18>	steveklabnik, no, I did rustup.sh --channel=nightly earlier today. Should that do it?
+T 1463776756 18<dylukes18>	Also I can just print out the request headers (or lackthereof)
+T 1463776796 18<dylukes18>	It doesn't even have any accept headers or anything.
+T 1463776838 18<jdavis_18>	steveklabnik, I am also using the --prefix option and --disable-sudo
+T 1463776838 18<steveklabnik18>	jdavis_: hmmm. i haven't used rustup.sh in a while, but it should have gotten you the latest. are you sure that you don't have _too new_ a nightly?
+T 1463776853 18<steveklabnik18>	if it's that specific issue
+T 1463776854 18<jdavis_18>	steveklabnik, how do I make it less new?
+T 1463776882 18<steveklabnik18>	you'd figure out the date that that project requires and then install that specific one
+T 1463776888 23*	postmodern (postmodern@moz-84p26c.t54f.2oct.01c2.2601.IP23) has joined
+T 1463776888 23*	pcwalton_ (pcwalton@moz-omu0t1.static-ip.telepacific.net23) has joined
+T 1463776888 22*	26ChanServ sets mode 24+a on 22#rust pcwalton_
+T 1463776888 22*	26ChanServ gives channel operator status to 18pcwalton_
+T 1463776892 18<steveklabnik18>	you can pass a date to rustup somehow, though i forget exactly what it is :/
+T 1463776899 18<steveklabnik18>	this is the pain of nightly :)
+T 1463776923 18<apajx18>	does anyone else find it unsatisfying that so much of the ecosystem is hestitant to commit to a Rust stable channel? Ra I probably sound like a broken record I complain about it to much
+T 1463776934 18<steveklabnik18>	i think it depends on what parts of the ecosystem you're using
+T 1463776946 18<steveklabnik18>	the majority of the ecosystem does work on stable
+T 1463776956 18<steveklabnik18>	but, depending on what you're doing, some sub-parts use nightly more than others
+T 1463776960 18<apajx18>	that's a fair point, i'm likely blinded by the projects I care about
+T 1463776966 23*	cruor99 (cruor99@moz-230so5.customer.cdi.no23) has joined
+T 1463776970 18<_habnabit18>	(many things have flags for stable support, in the worst case)
+T 1463776977 23*	recurrence (recurrence@moz-0r0dje.bchsia.telus.net23) has joined
+T 1463777039 23*	creationix (creationix@moz-69oa2g.cpe.cableone.net23) has joined
+T 1463777041 24*	stelarcf__________ has quit (Client exited)
+T 1463777048 24*	pcwalton has quit (Ping timeout: 121 seconds)
+T 1463777048 24*	28pcwalton_ is now known as 18pcwalton
+T 1463777054 24*	stouset has quit (Ping timeout: 121 seconds)
+T 1463777070 18<steveklabnik18>	1/win 21
+T 1463777072 18<steveklabnik18>	lol
+T 1463777073 18<dylukes18>	Even with an Accept header, no dice, hm.
+T 1463777094 24*	eckhardt has quit (Connection closed)
+T 1463777106 23*	FreeBird_ (FreeBird@moz-hibqkr.9t5k.kgbt.120b.2a02.IP23) has joined
+T 1463777121 18<_habnabit18>	dylukes, did you try using mitmproxy yet?
+T 1463777130 23*	sifton (sifton@moz-fhv.mjm.190.192.IP23) has joined
+T 1463777133 24*	dellavg has quit (Ping timeout: 121 seconds)
+T 1463777137 18<dylukes18>	I will, just running through options I have at my disposal currently first.
+T 1463777164 24*	cruor99 has quit (Connection closed)
+T 1463777209 23*	tristianc (tristiancel@moz-k2jmgi.fios.verizon.net23) has joined
+T 1463777268 24*	dylukes has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+T 1463777313 23*	cruor99 (cruor99@moz-230so5.customer.cdi.no23) has joined
+T 1463777412 18<kaoD18>	I don't see a custom implementation for .rev() for ranges
+T 1463777424 18<kaoD18>	does that mean it is rendering the whole range and then iterating backwards?
+T 1463777455 23*	ferjm (textual@moz-i8i6b3.dynamicip.rima-tde.net23) has joined
+T 1463777486 18<_habnabit18>	kaoD, isn't a range a double-ended iterator
+T 1463777493 18<schirtze18>	I was hoping there was some way to decrement or "iterate backwars" through a range. Its sounding like it literally reversed the range though... 
+T 1463777504 18<_habnabit18>	schirtze, .rev()
+T 1463777504 24*	demilux has quit (Connection closed)
+T 1463777506 23*	ssebastianj__ (ssebastianj@moz-5t0.6lv.90.181.IP23) has joined
+T 1463777507 18<kaoD18>	_habnabit: I'd think so, but I'm unable to find it in the docs' sourc
+T 1463777523 23*	durka42 (durka42@moz-c5p.jet.130.158.IP23) has joined
+T 1463777525 18<steveklabnik18>	rev does iterate backwards
+T 1463777532 18<steveklabnik18>	it does not build the whole thing and then iterate backwards
+T 1463777536 23*	demilux (demilux@moz-153.u1a.99.70.IP23) has joined
+T 1463777544 24*	chain_chan has quit (Ping timeout: 121 seconds)
+T 1463777552 18<_habnabit18>	impl<A> DoubleEndedIterator for Range<A>
+T 1463777554 18<kaoD18>	hah, found it
+T 1463777554 18<schirtze18>	so it's not reversing the range then?
+T 1463777577 18<jdavis_18>	Well, I checked out the nightly from the date when postgres-extension.rs was last updated (2016-01-18) and I get a compiler crash. Probably too old to be worth reporting now (I assume it's fixed already and not worth a root cause).
+T 1463777579 18<schirtze18>	maybe I'm talking about this wrong. 
+T 1463777580 23*	stelarcf__________ (stelarcf@moz-465.51e.78.82.IP23) has joined
+T 1463777581 18<steveklabnik18>	in the sense that iteration happens in backwards
+T 1463777581 18<apajx18>	schirtze: a range defines a vector of values, .rev() will start from the end and work towards teh beginning
+T 1463777593 24*	stelarcf__________ has quit (Client exited)
+T 1463777598 18<schirtze18>	ahh
+T 1463777609 24*	saml_ has quit (Connection closed)
+T 1463777612 23*	mib_o3iosn (Mibbit@moz-vv5125.dynamic.mtsallstream.net23) has joined
+T 1463777614 23*	dylukes (dylukes@moz-sd9j38.fios.verizon.net23) has joined
+T 1463777614 18<jdavis_18>	Let me ask this then: how can I update the project so that it can compile on current nightly? Does rustc_front exist now at all?
+T 1463777615 23*	stelarcf__________ (stelarcf@moz-465.51e.78.82.IP23) has joined
+T 1463777620 18<kaoD18>	I always miss the ability to go to definitions from the docs, click [src] and then manually looking for it is a pain in the ass
+T 1463777628 18<apajx18>	.step_by would be used to add information to the range to define a different vector
+T 1463777629 18<steveklabnik18>	jdavis_: it does, but it's probably changed a ton since january
+T 1463777648 18<kaoD18>	especially for Range where the actual implementation is in iter.rs
+T 1463777650 18<steveklabnik18>	jdavis_: that said, syntax extensions are far from my personal strengths, skills-wise
+T 1463777654 18<durka4218>	didn't rustc_front change to just rustc::front?
+T 1463777664 23*	chain_chan (chainChan@moz-q1cbvj.ip.veracitynetworks.com23) has joined
+T 1463777679 18<kaoD18>	(the actual implementation of iterator traits I mean)
+T 1463777683 18<steveklabnik18>	it's possible. it exists in _some_ form, heh
+T 1463777691 24*	ssebastianj_ has quit (Ping timeout: 121 seconds)
+T 1463777714 23*	makufiru (uid67373@moz-78803c.tooting.irccloud.com23) has joined
+T 1463777727 18<jdavis_18>	steveklabnik, OK, but I'd like to update it anyway to revitalize the project. I guess add it as a dependency. I wonder why it's not there already?
+T 1463777769 24*	nercury has quit (Quit: ZzzzzZzzZzzzZzZzzZ)
+T 1463777778 18<apajx18>	Is the StepBy iterator not a DoubleEndedIterator? and if so how come?
+T 1463777790 24*	cruor99 has quit (Connection closed)
+T 1463777800 18<steveklabnik18>	jdavis_: unsure
+T 1463777826 18<jdavis_18>	steveklabnik, where does rustc_front exist? I added it as a dependency in Cargo.toml, and it can't find it, and I also tried searching github and crates.io.
+T 1463777834 18<Naerbnic18>	Is there a trait that states that a type can be derived from a number literal?
+T 1463777841 24*	mgottschlag has quit (Ping timeout: 121 seconds)
+T 1463777842 24*	jonmorehouse has quit (Ping timeout: 121 seconds)
+T 1463777848 18<steveklabnik18>	jdavis_: as durka42 mentioned, it might have been renamed, actually
+T 1463777852 18<steveklabnik18>	jdavis_: it's a compiler internal
+T 1463777858 18<steveklabnik18>	Naerbnic: FromPrimitive, maybe?
+T 1463777868 18<Naerbnic18>	Ah, thanks!
+T 1463777872 18<steveklabnik18>	Naerbnic: i think it's in the num crate?
+T 1463777883 24*	saimen has quit (Ping timeout: 121 seconds)
+T 1463777888 18<kaoD18>	apajx: it is not double ended
+T 1463777911 18<durka4218>	jdavis_: maybe just see what it uses from rustc_front and find them in the docs here: http://manishearth.github.io/rust-internals-docs/rustc/
+T 1463777911 18<kaoD18>	(AFAICT)
+T 1463777917 18<durka4218>	then you can find out whatever it is you need import currently
+T 1463777927 18<apajx18>	kaoD: huh wonder why
+T 1463777935 24*	creationix has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+T 1463777936 23*	cruor99 (cruor99@moz-230so5.customer.cdi.no23) has joined
+T 1463777941 18<kaoD18>	Naerbnic: there's NumCast in num crate if that's what you mean
+T 1463777968 18<sfackler18>	apajx: if you're taking values off the back, it has no way of knowing if it's aligned with the  step size from the front
+T 1463777984 24*	pcwalton has quit (Client exited)
+T 1463778009 18<sfackler18>	StepBy<I> could implement DoubleEndedIterator where I: DoubleEndedIterator + ExactSizeIterator though
+T 1463778010 24*	junqed has quit (Ping timeout: 121 seconds)
+T 1463778028 18<schirtze18>	It's peculiar. My C selection_sort runs slower than my Rust one. But my C insertion_sort is quite a bit faster than the Rust one.
+T 1463778038 23*	Jobava (uid133806@moz-m691l3.richmond.irccloud.com23) has joined
+T 1463778057 24*	cruor99 has quit (Connection closed)
+T 1463778065 18<apajx18>	So you can't determine the end in O(1), which means iterating backwards is too expensive and not worth it (since you'd have to iterate all the way forwards to know the end to do so)
+T 1463778099 23*	cruor99 (cruor99@moz-230so5.customer.cdi.no23) has joined
+T 1463778110 23*	SneakySnake (snake@moz-i9is4u.pool.telekom.hu23) has joined
+T 1463778121 18<sfackler18>	you can detemrin the end, but you then don't have an iterator left to pull elements off of the back of
+T 1463778122 18<schirtze18>	So it would be better to just use a while loop instead of iterating backwards?
+T 1463778127 24*	cruor99 has quit (Connection closed)
+T 1463778181 23*	mgottschlag (quassel@moz-gsq9jv.hsi6.kabel-badenwuerttemberg.de23) has joined
+T 1463778212 18<apajx18>	schirtze: iterating backwards should be equivalent to the while loop. Ultimately it's going to be however LLVM optimizes it that's going to determine Rust's performance. Until MIR comes along anyway
+T 1463778230 23*	Askeing-home (askeing_hom@moz-tl97nu.dynamic.hinet.net23) has joined
+T 1463778232 24*	sifton has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+T 1463778244 24*	arBmind has quit (Quit: Leaving.)
+T 1463778247 23*	japaric (japaric@moz-eqo.3uu.234.190.IP23) has joined
+T 1463778247 24*	tristianc has quit (Quit: Konversation terminated!)
+T 1463778303 23*	cruor99 (cruor99@moz-230so5.customer.cdi.no23) has joined
+T 1463778310 24*	cruor99 has quit (Connection closed)
+T 1463778312 23*	mindtree (Mitch@moz-8da.9io.177.101.IP23) has joined
+T 1463778334 23*	drb (drb@moz-a63.290.197.124.IP23) has joined
+T 1463778356 18<jdavis_18>	steveklabnik, thank you! it compiles now. Now to see if it works.
+T 1463778367 18<steveklabnik18>	nice
+T 1463778420 18<schirtze18>	apajx, yeah I'm just thrown for a loop (heh). I'm finding it harder than I expected to reason about Rust's performance than I had anticipated.
+T 1463778503 18<apajx18>	it should follow any high level big O analysis just find, more precise measurements beyond that should probably be done with several calls, statistical confidence bounds, etc. cargo bench might be useful for you in that sense if you just want to play with perforamnce
+T 1463778516 18<apajx18>	s/find/fine
+T 1463778525 23*	sifton (sifton@moz-fhv.mjm.190.192.IP23) has joined
+T 1463778527 24*	jdavis_ has quit (Quit: Ex-Chat)
+T 1463778527 23*	jdavis__ (jdavis@moz-s05.0hc.122.137.IP23) has joined
+T 1463778545 24*	Askeing-home has quit (Ping timeout: 121 seconds)
+T 1463778560 23*	Weavel (IceChat9@moz-dvhmnc.elisa-laajakaista.fi23) has joined
+T 1463778565 24*	mindtree has quit (Ping timeout: 121 seconds)
+T 1463778655 23*	khj (Thunderbird@moz-qc95hk.pools.vodafone-ip.de23) has joined
+T 1463778668 23*	tamird (tamird@moz-u20jfv.home.cgocable.net23) has joined
+T 1463778689 18<jdavis__18>	steveklabnik, by the way, is that the official way to search the rust internals libraries?
+T 1463778698 24*	chain_chan has quit (Connection closed)
+T 1463778709 24*	28ubsan__ is now known as 18ubsan
+T 1463778715 23*	junqed (junqed@moz-o59.9fp.70.178.IP23) has joined
+T 1463778735 18<steveklabnik18>	for now, yeah
+T 1463778742 23*	junqed_ (junqed@moz-o59.9fp.70.178.IP23) has joined
+T 1463778743 18<steveklabnik18>	we want to publish them ourselves too, but haven't been able to
+T 1463778755 24*	mib_o3iosn has quit (Quit: http://www.mibbit.com ajax IRC Client)
+T 1463778767 24*	sifton has quit (Ping timeout: 121 seconds)
+T 1463778811 23*	nercury (nercury@moz-ngr949.static.zebra.lt23) has joined
+T 1463778818 24*	ygrek has quit (Ping timeout: 121 seconds)
+T 1463778832 18<dylukes18>	Ok...
+T 1463778833 23*	chain_chan (chainChan@moz-q1cbvj.ip.veracitynetworks.com23) has joined
+T 1463778844 18<dylukes18>	_habnabit I unfortunately can't set up transparent proxying currently. 
+T 1463778865 23*	eckhardt (eckhardt@moz-kv4te9.hq.squareup.com23) has joined
+T 1463778877 18<schirtze18>	I'll have to look into that then. Right now I'm just using time::Insant and clock() respectively to compare rust and c performance. My c tends to be very pointer arithmetic heavy. In rust I'm finding it mostly fine to translate over to comparable code. Major differences are just iterators and casting to usize for acessors.
+T 1463778901 24*	jfo has quit (Quit: Leaving...)
+T 1463778933 23*	mib_a17h1a (Mibbit@moz-obi3id.ca.comcast.net23) has joined
+T 1463778943 24*	28NameNotFound is now known as 18zz_NameNotFound
+T 1463778948 23*	ubsan_ (ubsan@moz-d075a6.5h7h.485o.fb90.2607.IP23) has joined
+T 1463778957 24*	junqed has quit (Ping timeout: 121 seconds)
+T 1463778968 23*	ubsan__ (ubsan@moz-cc6.3fu.114.66.IP23) has joined
+T 1463779025 23*	creationix (creationix@moz-69oa2g.cpe.cableone.net23) has joined
+T 1463779071 24*	ubsan has quit (Ping timeout: 121 seconds)
+T 1463779076 23*	santiago (santiago@moz-3h83bo.static.qwest.net23) has joined
+T 1463779077 24*	kheadley has quit (Quit: )
+T 1463779086 23*	SiegeLord (Mibbit@moz-c70lc1.fios.verizon.net23) has joined
+T 1463779095 24*	chain_chan has quit (Connection closed)
+T 1463779098 23*	kheadley (uid159604@moz-j5q8a1.highgate.irccloud.com23) has joined
+T 1463779110 23*	ubsan (ubsan@moz-cc6.3fu.114.66.IP23) has joined
+T 1463779116 24*	tamird has quit (Quit: Textual IRC Client: www.textualapp.com)
+T 1463779147 18<talchas18>	those aren't the same clock
+T 1463779147 24*	Weavel has quit (Quit: Give a man a fish and he will eat for a day. Teach him how to fish, and he will sit in a boat and drink beer all day)
+T 1463779158 18<talchas18>	(though in practice on an unloaded system it's unlikely to matter too much)
+T 1463779182 18<SiegeLord18>	Is there a simple library like getopts but not getopts? I can't use getopts as it conflicts with the private crate of the same name... I tried like 2 crates so far without much success, argparse and args
+T 1463779205 18<talchas18>	there's clap
+T 1463779216 18<SneakySnake18>	Clap isn't exactly simple
+T 1463779222 18<sfackler18>	SiegeLord: you should be able to use the crates.io getopts without issue
+T 1463779227 18<durka4218>	not being able to use a crate due to a name conflict seems lame
+T 1463779229 18<talchas18>	and docopt which is a different way of doing it for definitions of "simple"
+T 1463779229 18<sfackler18>	just add a cargo.toml dependency
+T 1463779233 24*	ubsan__ has quit (Ping timeout: 121 seconds)
+T 1463779235 18<durka4218>	isn't there a way to fix that?
+T 1463779250 18<SiegeLord18>	sfackler: I am not using cargo
+T 1463779260 24*	kmels has quit (Ping timeout: 121 seconds)
+T 1463779263 18<sfackler18>	SiegeLord: --extern getopts=path_to_getopts.rlib
+T 1463779267 24*	creationix has quit (Ping timeout: 121 seconds)
+T 1463779269 18<SiegeLord18>	That doesn't work
+T 1463779276 18<SiegeLord18>	Or rather, sorry
+T 1463779282 18<SiegeLord18>	It does work, but I don't know that path
+T 1463779287 23*	Gabriel_7 (Gabriel@moz-bbis4e.mtgr.92aj.0e35.2a01.IP23) has joined
+T 1463779289 18<SiegeLord18>	As it has a hash :P
+T 1463779290 24*	stelarcf__________ has quit (Client exited)
+T 1463779310 18<SiegeLord18>	That's what I do currently
+T 1463779313 18<sfackler18>	--extern getopts=$(find $LIB_DIR -name "libgetopts*.rlib") :P
+T 1463779316 18<SiegeLord18>	But every time cargo changes its hash, it breaks
+T 1463779320 24*	mgottschlag has quit (Quit: No Ping reply in 180 seconds.)
+T 1463779335 18<SiegeLord18>	Which happens like every month... I don't understand why they can't keep hash stable
+T 1463779352 24*	ubsan has quit (Ping timeout: 121 seconds)
+T 1463779390 23*	mgottschlag (quassel@moz-gsq9jv.hsi6.kabel-badenwuerttemberg.de23) has joined
+T 1463779392 18<SneakySnake18>	Can I express mutually exclusive features in cargo? For example, I have two different backends for the same frontend.
+T 1463779395 18<SneakySnake18>	Is this possible?
+T 1463779446 18<bluss18>	SneakySnake: it's not possible to express
+T 1463779452 18<SneakySnake18>	That's lame
+T 1463779456 18<bluss18>	yet you can make sure a crate doesn't compile if both are enabled
+T 1463779526 18<SneakySnake18>	I guess there is also cargo rustc -- --cfg
+T 1463779554 18<jdavis__18>	Getting a "macro undefined error" for a macro defined in an external crate. I already have a #[phase(plugin)] over the "extern crate". Do I need to do something else?
+T 1463779667 19*	Now talking on 22#rust
+T 1463779667 22*	Topic for 22#rust is: Rust general discussion | Current release: 1.8 | | Playground https://play.rust-lang.org/ | Forum  https://users.rust-lang.org/ | New user channel: #rust-beginners  | Conduct https://www.rust-lang.org/conduct.html | Logs  https://botbot.me/mozilla/rust
+T 1463779667 22*	Topic for 22#rust set by 26mbrubeck!sid61@moz-2pjnuf.0j4i.jtu0.0101.2620.IP (24Thu Apr 14 19:00:30 2016)
+T 1463779676 24*	lokien has quit (Connection closed)
+T 1463779679 23*	tamird (tamird@moz-u20jfv.home.cgocable.net23) has joined
+T 1463779683 24*	tamird has quit (Quit: Textual IRC Client: www.textualapp.com)
+T 1463779695 23*	ubsan_ (ubsan@moz-bftt4d.5h7h.485o.fb90.2607.IP23) has joined
+T 1463779704 23*	renderful (renderful@moz-atg40s.co.comcast.net23) has joined
+T 1463779721 24*	wayedt has quit (Quit: ...)
+T 1463779722 18<schirtze18>	talchas, oh, I had asked in here what would be comparable to clock() and I was pointed to instant.
+T 1463779751 18<mbrubeck18>	jdavis__: I think `#[phase(plugin)] extern crate foo;` was changed to `#![plugin(foo)]`
+T 1463779752 24*	eckhardt has quit (Connection closed)
+T 1463779779 23*	eckhardt (eckhardt@moz-kv4te9.hq.squareup.com23) has joined
+T 1463779788 23*	agjacome (agjacome@moz-6lt.8p2.3.148.IP23) has joined
+T 1463779815 24*	eckhardt has quit (Connection closed)
+T 1463779815 23*	FreeBird__ (FreeBird@moz-389ejm.9t5k.kgbt.120b.2a02.IP23) has joined
+T 1463779824 23*	eckhardt (eckhardt@moz-kv4te9.hq.squareup.com23) has joined
+T 1463779880 23*	themagician (themagician@moz-hbf012.elisa-laajakaista.fi23) has joined
+T 1463779901 18<talchas18>	schirtze: I believe they intended to say not to use clock() and just use time::Instant, I think they may not have realized you were doing cross-language benchmarking
+T 1463779906 24*	ubsan has quit (Ping timeout: 121 seconds)
+T 1463779917 24*	FreeBird_ has quit (Ping timeout: 121 seconds)
+T 1463779937 18<talchas18>	but clock() is the total cpu time of all threads in the process, while time::Instant is physical time passing
+T 1463779938 24*	Douman has quit (Connection closed)
+T 1463779944 18<schirtze18>	talchas, that was probably the case. As I hadn't expressed my intent to compare.
+T 1463779955 23*	makoLine (mako@moz-mqc4hl.flip.co.nz23) has joined
+T 1463779961 18<talchas18>	but if you have just one thread and nothing else is running, and you don't block, they'll be about the same
+T 1463779966 24*	renderful has quit (Ping timeout: 121 seconds)
+T 1463779984 23*	wcrichto (wcrichto@moz-t23usf.client.mchsi.com23) has joined
+T 1463779996 18<schirtze18>	yeah, right now it's all single threaded benchmarks. Though I want to move onto benching threaded programs.
+T 1463780035 24*	creativcoder has quit (Ping timeout: 121 seconds)
+T 1463780044 24*	tromey has quit (Quit: ERC (IRC client for Emacs 25.0.93.1))
+T 1463780049 24*	recurrence has quit (Ping timeout: 121 seconds)
+T 1463780073 23*	staticassert (Mibbit@moz-bb6mst.ma.comcast.net23) has joined
+T 1463780090 24*	moosnat has quit (Quit: Leaving)
+T 1463780148 18<talchas18>	there it would obviously be rather different, and the multi-threaded clock() can wind up being somewhat inaccurate depending on what kernel version you're running and how short the time period is
+T 1463780178 18<schirtze18>	man, benchmarking really is a soft science isn't it
+T 1463780183 18<talchas18>	(if the process is currently on the cpu, at least some versions don't include the time it has been running since it last updated its stats)
+T 1463780190 24*	bjz has quit (Quit: Textual IRC Client: www.textualapp.com)
+T 1463780195 24*	cpup has quit (Ping timeout: 121 seconds)
+T 1463780201 23*	laughinghan (laughinghan@moz-cnu.7f4.80.208.IP23) has joined
+T 1463780209 18<talchas18>	schirtze: well, if you want wall time, that's easy to measure
+T 1463780228 18<talchas18>	and if you want to also know total cpu usage, you can easily measure that over the whole process
+T 1463780236 18<talchas18>	(from start to exit that is)
+T 1463780250 18<wcrichto18>	There's no way to do parameterized types aliases like `type<T> Foo = Vec<T>` is there?
+T 1463780253 18<talchas18>	it's just asking for the cpu usage of a different thread that is currently running that can be a bit sketchy
+T 1463780257 23*	cpup (cpup@moz-oc1.ktm.218.32.IP23) has joined
+T 1463780257 18<schirtze18>	How would I do cpu time for rust then?
+T 1463780262 18<mbrubeck18>	For C you can use `clock_gettime(CLOCK_MONOTONIC, ...)` the same way as time::Instant in Rust
+T 1463780272 23*	jdm (jdm@moz-09s.m12.252.12.IP23) has joined
+T 1463780272 18<talchas18>	(and even then it's on the order of milliseconds, so you can just run your benchmark for longer)
+T 1463780272 22*	26ChanServ gives channel operator status to 18jdm
+T 1463780298 18<talchas18>	I don't think the stdlib has one exposed
+T 1463780329 18<mbrubeck18>	You could use the libc crate and http://doc.rust-lang.org/libc/x86_64-unknown-linux-gnu/libc/fn.clock_gettime.html
+T 1463780333 18<mbrubeck18>	with CLOCK_PROCESS_CPUTIME_ID
+T 1463780367 24*	dylukes has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+T 1463780392 23*	recurrence (recurrence@moz-0r0dje.bchsia.telus.net23) has joined
+T 1463780396 18<schirtze18>	ah, good stuff. Hopefully something lands in the standard library eventually.
+T 1463780424 24*	areski has quit (Ping timeout: 121 seconds)
+T 1463780426 24*	mib_a17h1a has quit (Quit: http://www.mibbit.com ajax IRC Client)
+T 1463780460 23*	FreeBird (FreeBird@moz-389ejm.9t5k.kgbt.120b.2a02.IP23) has joined
+T 1463780587 24*	FreeBird__ has quit (Ping timeout: 121 seconds)
+T 1463780610 23*	bjz (bjz@moz-puppgq.tpgi.com.au23) has joined
+T 1463780617 18<talchas18>	(you also used to be able to DoS the system pretty well by spinning on clock() in a few cores, because it took a global lock to look for your threads)
+T 1463780629 18<talchas18>	but all this is fixed now
+T 1463780674 23*	raisin (Mibbit@moz-r3th81.north49.com23) has joined
+T 1463780677 24*	Altazimuth has quit (Ping timeout: 121 seconds)
+T 1463780683 24*	raisin has quit (Quit: http://www.mibbit.com ajax IRC Client)
+T 1463780711 24*	ahal has quit (Quit: Leaving)
+T 1463780716 24*	junqed_ has quit (A TLS packet with unexpected length was received.)
+T 1463780743 24*	happyday` has quit (Ping timeout: 121 seconds)
+T 1463780753 24*	mpark has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+T 1463780769 23*	solenodic (solenodic@moz-43p.to9.42.72.IP23) has joined
+T 1463780838 23*	latk (textual@moz-5dsrbj.retail.telecomitalia.it23) has joined
+T 1463780839 23*	vfoley (vince@moz-527sm1.dsl.colba.net23) has joined
+T 1463780848 18<vfoley18>	Can anyone help me with this snippet? https://is.gd/6qIrQP
+T 1463780882 24*	red75prime has quit (Ping timeout: 121 seconds)
+T 1463780892 18<mbrubeck18>	vfoley: https://is.gd/Is8whA
+T 1463780917 18<mbrubeck18>	vfoley: This allows for the case where T + T has some type other than T
+T 1463780917 18<talchas18>	alternatively https://is.gd/2CJY4l
+T 1463780929 18<talchas18>	(which says "only if T + T results in a T")
+T 1463780953 23*	renderful (renderful@moz-atg40s.co.comcast.net23) has joined
+T 1463780956 18<mbrubeck18>	And here's the most generic possible version https://is.gd/IAviNp
+T 1463780963 23*	kaoD_ (kaoD@moz-ie59si.staticip.rima-tde.net23) has joined
+T 1463780971 18<vfoley18>	talchas: thanks. T::Output means "the Output type of T's Add impl"?
+T 1463780982 18<mbrubeck18>	right
+T 1463781005 24*	recurrence has quit (Ping timeout: 121 seconds)
+T 1463781023 18<mbrubeck18>	With the "most generic" version, if Foo + Bar -> Baz, then Vector2D<Foo> + Vector2D<Bar> -> Vector2D<Baz>
+T 1463781025 23*	drc_ (urb@moz-u85.puh.238.95.IP23) has joined
+T 1463781027 24*	ubsan_ has quit (Connection closed)
+T 1463781034 23*	311BCHWBZ (ubsan@moz-92sbjt.wa.comcast.net23) has joined
+T 1463781035 23*	557AAK114 (ubsan@moz-92sbjt.wa.comcast.net23) has joined
+T 1463781062 23*	creationix (creationix@moz-69oa2g.cpe.cableone.net23) has joined
+T 1463781069 24*	drc has quit (Ping timeout: 121 seconds)
+T 1463781099 23*	gopar (gopar@moz-5d354a.r89q.rq9c.0642.2601.IP23) has joined
+T 1463781118 23*	ssebastianj_ (ssebastianj@moz-32j.b8o.110.181.IP23) has joined
+T 1463781120 24*	renderful has quit (Quit: Leaving...)
+T 1463781153 24*	jonmorehouse has quit (Ping timeout: 121 seconds)
+T 1463781163 24*	kaoD has quit (Ping timeout: 121 seconds)
+T 1463781193 24*	28557AAK114 is now known as 18ubsan
+T 1463781227 24*	cpup has quit (Ping timeout: 121 seconds)
+T 1463781245 23*	recurrence (recurrence@moz-0r0dje.bchsia.telus.net23) has joined
+T 1463781279 23*	cpup (cpup@moz-5oj.ktm.218.32.IP23) has joined
+T 1463781288 24*	311BCHWBZ has quit (Ping timeout: 121 seconds)
+T 1463781305 24*	knutstrut has quit (Ping timeout: 121 seconds)
+T 1463781311 24*	ssebastianj__ has quit (Ping timeout: 121 seconds)
+T 1463781364 24*	creationix has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+T 1463781387 24*	ferjm has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+T 1463781406 24*	ambaxter has quit (Quit: )
+T 1463781419 24*	postmodern has quit (Quit: Leaving)
+T 1463781420 23*	ubsan_ (ubsan@moz-92sbjt.wa.comcast.net23) has joined
+T 1463781428 23*	knutstrut (knutstrut@moz-cvkn0l.bredband.comhem.se23) has joined
+T 1463781452 24*	Gabriel_7 has quit (Connection closed)
+T 1463781469 23*	dinfuehr (dinfuehr@moz-066.9nh.59.86.IP23) has joined
+T 1463781517 23*	Sgeo (Sgeo@moz-cqm03c.dyn.optonline.net23) has joined
+T 1463781532 23*	brianpWins (brianpWins@moz-amk.0cj.157.192.IP23) has joined
+T 1463781557 23*	mindtree (Mitch@moz-8da.9io.177.101.IP23) has joined
+T 1463781611 23*	mpark (mpark@moz-hud.3ra.116.199.IP23) has joined
+T 1463781615 18<brianpWins18>	I’ve got an integration test, but wanted a helpers module in another file. If I create a second file in `/tests/` it compiles it as a crate to test against. Is there an appropriate spot for a test helper module, only being used in integration style tests?
+T 1463781623 23*	c74d (c74d@moz-s47en6.oc.cox.net23) has joined
+T 1463781690 24*	jimb has quit (Ping timeout: 121 seconds)
+T 1463781701 24*	kkus has quit (Ping timeout: 121 seconds)
+T 1463781712 24*	dinfuehr has quit (Ping timeout: 121 seconds)
+T 1463781744 18<steveklabnik18>	brianpWins: use tests/foo/mod.rs rather than tests/foo.rs
+T 1463781762 24*	jdavis__ has quit (Ping timeout: 121 seconds)
+T 1463781796 18<c74d18>	If I have an enum of which all the variants share one or more common fields, is there an idiomatic way to not repeat those fields in each variant? (i.e., to "DRY" the variants)
+T 1463781810 24*	mindtree has quit (Ping timeout: 121 seconds)
+T 1463781819 18<_habnabit18>	c74d, make another struct?
+T 1463781820 18<brianpWins18>	steveklabnik: :thumbsup: Works perfect
+T 1463781820 18<steveklabnik18>	not unless they're all the same
+T 1463781822 24*	iiddnn_ has quit (Client exited)
+T 1463781831 18<steveklabnik18>	if they are, you can make a struct that's all their data
+T 1463781855 24*	28zz_NameNotFound is now known as 18NameNotFound
+T 1463781856 18<_habnabit18>	steveklabnik, what about Variant(Common, u64, u64)
+T 1463781878 18<steveklabnik18>	you could do that
+T 1463781889 18<steveklabnik18>	i'm not sure that i personally would
+T 1463781907 24*	santiago has quit (Quit: Computer has gone to sleep.)
+T 1463781953 23*	Askeing-home (askeing_hom@moz-ete7g2.dynamic.hinet.net23) has joined
+T 1463781959 24*	oln has quit (A TLS packet with unexpected length was received.)
+T 1463782007 24*	cpup has quit (Ping timeout: 121 seconds)
+T 1463782017 24*	durka42 has quit (Client exited)
+T 1463782019 24*	brunl has quit (Client exited)
+T 1463782051 23*	jdavis__ (jdavis@moz-s05.0hc.122.137.IP23) has joined
+T 1463782057 23*	jimb (user@moz-09a.i8g.126.207.IP23) has joined
+T 1463782115 24*	schirtze has quit (Quit: Leaving)
+T 1463782120 23*	cpup (cpup@moz-44a.ktm.218.32.IP23) has joined
+T 1463782182 23*	Azy8BsKXVko (None@moz-8uvaq4.snjsca.sbcglobal.net23) has joined
+T 1463782183 24*	zhoeon has quit (Ping timeout: 121 seconds)
+T 1463782188 24*	SiegeLord has quit (Quit: http://www.mibbit.com ajax IRC Client)
+T 1463782222 24*	Askeing-home has quit (Ping timeout: 121 seconds)
+T 1463782246 23*	mmalone (mmalone@moz-819rkk.lv.cox.net23) has joined
+T 1463782276 24*	fabiand has quit (Quit: Verlassend)
+T 1463782300 23*	conrad2 (cpdean@moz-h912j6.res.rr.com23) has joined
+T 1463782341 18<mbrubeck18>	Or you can do `struct MyType { common_fields: Whatever, variant_fields: MyEnum }`
+T 1463782396 24*	jdm has quit (Quit: )
+T 1463782463 19*	Now talking on 22#rust
+T 1463782463 22*	Topic for 22#rust is: Rust general discussion | Current release: 1.8 | | Playground https://play.rust-lang.org/ | Forum  https://users.rust-lang.org/ | New user channel: #rust-beginners  | Conduct https://www.rust-lang.org/conduct.html | Logs  https://botbot.me/mozilla/rust
+T 1463782463 22*	Topic for 22#rust set by 26mbrubeck!sid61@moz-2pjnuf.0j4i.jtu0.0101.2620.IP (24Thu Apr 14 19:00:30 2016)
+T 1463782489 24*	jdavis__ has quit (Quit: Ex-Chat)
+T 1463782489 23*	jdavis_ (jdavis@moz-s05.0hc.122.137.IP23) has joined
+T 1463782544 24*	conrad2 has quit (Ping timeout: 121 seconds)
+T 1463782568 23*	postmodern (postmodern@moz-vhos7n.or.comcast.net23) has joined
+T 1463782664 24*	jeffbradberry has quit (Ping timeout: 121 seconds)

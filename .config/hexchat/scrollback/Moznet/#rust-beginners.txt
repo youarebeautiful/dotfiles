@@ -1,0 +1,345 @@
+T 1463566056 23*	28[18steveklabnik28] 30(24root@moz-fft.uo8.55.45.IP30): 18root
+T 1463566056 23*	28[18steveklabnik28] #cargo @#rust ~#rust-docs #rust-tools #rust-webdev #rust-osdev #nom ~#rust-beginners #redox #rustcampeu 
+T 1463566056 23*	28[18steveklabnik28] 29levin.mozilla.org :US East (N. Virginia)
+T 1463566056 23*	28[18steveklabnik28] is away 30(23brb30)
+T 1463566056 23*	28[18steveklabnik28] is logged in as 18steveklabnik
+T 1463566056 23*	28[18steveklabnik28] is a registered nick
+T 1463566056 23*	28[18steveklabnik28] idle 2314:05:21, signon: 23Sat Apr 16 05:49:27
+T 1463566056 23*	28[18steveklabnik28] End of WHOIS list.
+T 1463566089 23*	28[18lokien28] 30(24lokien@moz-419.5d0.42.31.IP30): 18realname
+T 1463566089 23*	28[18lokien28] is connecting from lokien@31.42.0.230 31.42.0.230
+T 1463566089 23*	28[18lokien28] #rust #rust-beginners 
+T 1463566089 23*	28[18lokien28] 29fripp.mozilla.org :EU (Ireland)
+T 1463566089 23*	28[18lokien28] is using modes +x
+T 1463566089 23*	28[18lokien28] idle 2300:01:23, signon: 23Wed May 18 12:06:45
+T 1463566089 23*	28[18lokien28] End of WHOIS list.
+T 1463566214 24*	makoLine has quit (Ping timeout: 121 seconds)
+T 1463566239 23*	nercury (nercury@moz-pjl.da3.216.88.IP23) has joined
+T 1463566314 23*	syrcon (alex@moz-af000f.is74.ru23) has joined
+T 1463566432 23*	nodweber (nodweber@moz-cvp.opf.73.176.IP23) has joined
+T 1463566475 24*	brucem has quit (Connection closed)
+T 1463566476 23*	skade_ (skade@moz-r65g68.pools.vodafone-ip.de23) has joined
+T 1463566687 24*	nodweber has quit (Ping timeout: 121 seconds)
+T 1463566704 23*	nodweber (nodweber@moz-cvp.opf.73.176.IP23) has joined
+T 1463566897 23*	nodweber_ (nodweber@moz-cvp.opf.73.176.IP23) has joined
+T 1463566900 24*	naufraghi has quit (Quit: Connection closed for inactivity)
+T 1463566992 24*	skade_ has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+T 1463567017 23*	makoLine (mako@moz-pa4phe.flip.co.nz23) has joined
+T 1463567047 24*	yeahnoob has quit (Connection closed)
+T 1463567062 24*	nodweber has quit (Ping timeout: 121 seconds)
+T 1463594529 19*	Now talking on 22#rust-beginners
+T 1463594529 22*	Topic for 22#rust-beginners is: Beginner's Rust discussion, unlogged. Ask away! | Book  https://doc.rust-lang.org/book/ | Playground  https://play.rust-lang.org | Forum  https://users.rust-lang.org | Conduct  https://www.rust-lang.org/conduct.html
+T 1463594529 22*	Topic for 22#rust-beginners set by 26niconii!nicole@moz-90oat7.midco.net (24Tue May 17 01:23:39 2016)
+T 1463594547 23*	lokien__ (lokien@moz-419.5d0.42.31.IP23) has joined
+T 1463594547 19*	Now talking on 22#rust-beginners
+T 1463594547 22*	Topic for 22#rust-beginners is: Beginner's Rust discussion, unlogged. Ask away! | Book  https://doc.rust-lang.org/book/ | Playground  https://play.rust-lang.org | Forum  https://users.rust-lang.org | Conduct  https://www.rust-lang.org/conduct.html
+T 1463594547 22*	Topic for 22#rust-beginners set by 26niconii!nicole@moz-90oat7.midco.net (24Tue May 17 01:23:39 2016)
+T 1463594556 24*	lokien__ has quit (Connection closed)
+T 1463594562 24*	alexhansen has quit (Ping timeout: 121 seconds)
+T 1463773173 19*	Now talking on 22#rust-beginners
+T 1463773173 22*	Topic for 22#rust-beginners is: Beginner's Rust discussion, unlogged. Ask away! | Book  https://doc.rust-lang.org/book/ | Playground  https://play.rust-lang.org | Forum  https://users.rust-lang.org | Conduct  https://www.rust-lang.org/conduct.html
+T 1463773173 22*	Topic for 22#rust-beginners set by 26niconii!nicole@moz-90oat7.midco.net (24Tue May 17 01:23:39 2016)
+T 1463773188 FiSHLiM plugin unloaded
+T 1463773188 Python interface unloaded
+T 1463773234 19*	Now talking on 22#rust-beginners
+T 1463773234 22*	Topic for 22#rust-beginners is: Beginner's Rust discussion, unlogged. Ask away! | Book  https://doc.rust-lang.org/book/ | Playground  https://play.rust-lang.org | Forum  https://users.rust-lang.org | Conduct  https://www.rust-lang.org/conduct.html
+T 1463773234 22*	Topic for 22#rust-beginners set by 26niconii!nicole@moz-90oat7.midco.net (24Tue May 17 01:23:39 2016)
+T 1463773297 18<staticassert18>	steveklabnik: Yeah but these return a Result
+T 1463773322 18<staticassert18>	So it would take [u8] I guess, and return Result<[u8], Err>
+T 1463773365 18<staticassert18>	tho I guess it can't be [u8] but my point is that instead of relying on a lint you could simply pass it back
+T 1463773385 18<danielrh18>	Does anyone know what happened to mio?
+T 1463773393 18<danielrh18>	https://github.com/carllerche/mio now started to 404
+T 1463773408 18<danielrh18>	and none of my pull requests got any response before then...is it still being maintained?
+T 1463773453 18<carllerche18>	yes, it's being maintained, mostly it is a question of me being really busy and not having any co-maintainers, i'm not sure why you are getting a 404, but when I clicked the link I got an error saying "One of our mostly harmless robots seems to think you are not a human."
+T 1463773459 18<carllerche18>	so, it looks like github is on the fritz
+T 1463773468 18<danielrh18>	oh carllerche :-) there you are :-)
+T 1463773473 18<danielrh18>	I was worried that you had deleted your account
+T 1463773477 18<carllerche18>	yeah... apparently my entire github profile got flagged 
+T 1463773479 18<carllerche18>	wtf
+T 1463773483 18<danielrh18>	ugh :-(
+T 1463773523 23*	lubos (lubos@moz-4f251i.cust.tlapnet.cz23) has joined
+T 1463773528 18<carllerche18>	great
+T 1463773529 24*	recurrence has quit (Connection closed)
+T 1463773537 18<danielrh18>	let me know if there's any way I can help
+T 1463773554 18<carllerche18>	ping me when I don't answer :P I'm in #mio on the irc
+T 1463773566 18<danielrh18>	BTW in general are you ok with the idea of letting Child::stdio and stderr be able to be turned into PipeWriter and PipeReader respectively?
+T 1463773598 18<danielrh18>	and in allowing UDS to have shutdown just like TCP sockets?
+T 1463773622 18<carllerche18>	re: stdio / stderr, i'm not 100% sure I would have to reboot context
+T 1463773639 18<carllerche18>	i know in the past when considering stdio there were some issues
+T 1463773642 18<carllerche18>	mostly w/ windows
+T 1463773651 18<danielrh18>	I see...  I thought they were in the unix package anyway
+T 1463773668 18<danielrh18>	PipeReader and PipeWriter already have trouble in windows, irrespective of if they were made with pipe() or subprocess
+T 1463773690 18<carllerche18>	if it's in the unix sub mod, it's probably fine
+T 1463773694 18<danielrh18>	the way python deals with it is to actually use threads if you end up in a situation where you need to wait on multiple pipes
+T 1463773707 18<danielrh18>	but in mio it seems that they are just in unix sub mod, ya
+T 1463773725 18<Highwaybobbery18>	Ok, I found a new way to break my buffwriter :) https://is.gd/H1xNj1 How do i use the "mystical b" on the result of format()?
+T 1463773891 23*	dark-knight (dark-knight@moz-ti7ct0.dynamic.surfer.at23) has joined
+T 1463773900 23*	ssebastianj_ (ssebastianj@moz-7ssfkt.telecom.net.ar23) has joined
+T 1463773904 18<carllerche18>	danielrh: is it back?
+T 1463773966 18<zmanji18>	I'm using hyper and I would like the HTTP requests to be async (and not done on the same thread as main()), whats the best way to do this?
+T 1463773984 18<bluss18>	Highwaybobbery: hehe that's creative
+T 1463774000 18<bluss18>	Highwaybobbery: you'd use the write! macro at that point actually
+T 1463774016 18<bluss18>	write!(writer, "hello {}", x)).unwrap()
+T 1463774072 18<Highwaybobbery18>	oh bam! that's what I've been looking for! back to looking a lot like the original println!
+T 1463774084 18<Highwaybobbery18>	can you pass a buffer to println!?
+T 1463774090 24*	ssebastianj__ has quit (Ping timeout: 121 seconds)
+T 1463774091 18<bluss18>	yes
+T 1463774098 18<bluss18>	no
+T 1463774107 18<Highwaybobbery18>	lol
+T 1463774110 18<bluss18>	there's both write! and writeln! just like print! and println!
+T 1463774121 18<Highwaybobbery18>	ahha!
+T 1463774132 18<bluss18>	the print ones are just like the write ones except they always use the stdout and the panic on error
+T 1463774202 23*	recurrence (recurrence@moz-0r0dje.bchsia.telus.net23) has joined
+T 1463774213 18<Highwaybobbery18>	so, just to check my rationale for using a buffer in the first place, my program is writing a bunch of lines that constitute a 'screen' one char at a time. So as I understand it by using the buffer it will do a single write when the buffer goes out of scope. Is that corret?
+T 1463774219 18<aphistic18>	there's something in my rust crate that's causing it to take an abnormally long time to compile (minutes for a relatively small project). is there any way to troubleshoot what's causing it to be so slow?
+T 1463774271 18<danielrh18>	yes your account is now back
+T 1463774319 18<bluss18>	aphistic: you can use -Z time-passes when compiling a single crate to see what part of compilation takes time
+T 1463774328 18<bluss18>	but it's usually the latter passes related to llvm
+T 1463774388 18<cite-reader18>	Highwaybobbery: In theory you might fill the buffer ahead of time and trigger a write before the drop, but mostly correct.
+T 1463774451 18<Highwaybobbery18>	ok thanks cite-reader, that makes sense.
+T 1463774506 24*	mib_hpwb36 has quit (Quit: http://www.mibbit.com ajax IRC Client)
+T 1463774514 18<aphistic18>	bluss: do i pass that to cargo or rustc?
+T 1463774571 18<aphistic18>	ah, rustc
+T 1463774610 18<aphistic18>	it's just sitting on the step after language item collection
+T 1463774658 24*	starblue has quit (Ping timeout: 121 seconds)
+T 1463774688 18<aphistic18>	hah, i think i broke the compiler. my memory goes to 0 and my swap goes to 10GB when i run that
+T 1463774710 18<bluss18>	yep I think so
+T 1463774797 18<Highwaybobbery18>	yikes! stop sticking forkes in the compiler aphistic!
+T 1463774839 18<aphistic18>	guess i'll have to track down what's doing it
+T 1463774875 18<Highwaybobbery18>	Got another exciting breakage: https://is.gd/540mnr How do I determine the right type argument to use here?
+T 1463774977 18<bluss18>	aphistic: is this with Rust 1.8? If you have luck it's fixed in nightly
+T 1463774993 18<aphistic18>	yeah, 1.8
+T 1463774995 23*	chain_chan (chainChan@moz-q1cbvj.ip.veracitynetworks.com23) has joined
+T 1463775029 18<bluss18>	Highwaybobbery: well the type of the value is BufWriter<Stdout>
+T 1463775040 18<bluss18>	but you could make your write_stuff function more generic than that
+T 1463775045 24*	lubos has quit (Ping timeout: 121 seconds)
+T 1463775056 18<bluss18>	but we can try BufWriter<Stdout> first... (just use std::io::Stdout too)
+T 1463775122 18<aphistic18>	bluss: nope, looks like it's still happening on nightly
+T 1463775143 18<bluss18>	then you are a discoverer.. maybe
+T 1463775145 18<bluss18>	of new bugs
+T 1463775157 18<aphistic18>	yeah, i'm gonna try to track it down
+T 1463775172 18<aphistic18>	thankfully i have a diff of the things i've changed!
+T 1463775181 18<aphistic18>	yay for vcs
+T 1463775191 24*	staticassert has quit (Quit: http://www.mibbit.com ajax IRC Client)
+T 1463775201 18<bluss18>	the pass after lang item collection is lifetime resolution (on nightly)
+T 1463775216 18<aphistic18>	oh, interesting
+T 1463775227 18<aphistic18>	so maybe i made an infinite loop of lifetimes
+T 1463775232 18<aphistic18>	i've solved immortality
+T 1463775250 18<steveklabnik18>	carllerche: i've heard of other people getting flagged today, wonder if osmething just went wrong
+T 1463775262 18<carllerche18>	ain't no tellin
+T 1463775382 24*	karinqe_ has quit (Ping timeout: 121 seconds)
+T 1463775435 23*	durka42 (durka42@moz-c5p.jet.130.158.IP23) has joined
+T 1463775541 24*	ubsan has quit (Connection closed)
+T 1463775623 23*	alexhansen (alexhansen@moz-qjt.57j.194.131.IP23) has joined
+T 1463775660 23*	ubsan (ubsan@moz-cc6.3fu.114.66.IP23) has joined
+T 1463775720 23*	minibikini (anonymous@moz-m4f.6rh.4.171.IP23) has joined
+T 1463775737 23*	ubsan__ (ubsan@moz-fnb1om.5h7h.485o.fb90.2607.IP23) has joined
+T 1463775863 24*	recurrence has quit (Ping timeout: 121 seconds)
+T 1463775870 24*	alexhansen has quit (Ping timeout: 121 seconds)
+T 1463775870 24*	ubsan_ has quit (Ping timeout: 121 seconds)
+T 1463775908 24*	ubsan has quit (Ping timeout: 121 seconds)
+T 1463775977 24*	ubsan__ has quit (Quit: <3)
+T 1463775985 23*	ubsan (ubsan@moz-cc6.3fu.114.66.IP23) has joined
+T 1463776033 23*	ubsan_ (ubsan@moz-cc6.3fu.114.66.IP23) has joined
+T 1463776040 24*	pylbrecht has quit (Client exited)
+T 1463776231 23*	ubsan__ (ubsan@moz-6j08f3.5h7h.485o.fb90.2607.IP23) has joined
+T 1463776243 23*	u0_a80 (u0_a80@moz-irq3a4.cust.tele2.se23) has joined
+T 1463776244 23*	rominnoodlesam (Mibbit@moz-no7.eqv.123.63.IP23) has joined
+T 1463776270 24*	ubsan__ has quit (Quit: <3)
+T 1463776277 23*	ubsan__ (ubsan@moz-cc6.3fu.114.66.IP23) has joined
+T 1463776282 24*	ubsan_ has quit (Ping timeout: 121 seconds)
+T 1463776282 24*	ubsan has quit (Connection closed)
+T 1463776306 23*	zhoeon (fc@moz-8jak3u.cpe.pppoe.ca23) has joined
+T 1463776382 24*	u0_a80 has quit (Quit: WeeChat 1.5)
+T 1463776422 24*	andre_ has quit (Quit: leaving)
+T 1463776506 19*	Now talking on 22#rust-beginners
+T 1463776506 22*	Topic for 22#rust-beginners is: Beginner's Rust discussion, unlogged. Ask away! | Book  https://doc.rust-lang.org/book/ | Playground  https://play.rust-lang.org | Forum  https://users.rust-lang.org | Conduct  https://www.rust-lang.org/conduct.html
+T 1463776506 22*	Topic for 22#rust-beginners set by 26niconii!nicole@moz-90oat7.midco.net (24Tue May 17 01:23:39 2016)
+T 1463776519 23*	Notify: 18panicbit is online (29Moznet)
+T 1463776528 24*	minibikini has quit (Client exited)
+T 1463776580 24*	durka42 has quit (Client exited)
+T 1463776606 18<Highwaybobbery18>	bluss: thanks that worked like a champ! https://is.gd/TJjL1G how would I make that write stuff more generic? (I feel like some real knowledge bombs are headed my way ;)
+T 1463776681 18<bluss18>	you could change it to fn write_stuff<W: Write>(mut writer: W, x: i32)  for example
+T 1463776707 18<bluss18>	either that or  fn write_stuff<W: ?Sized + Write>(writer: &mut W, x: i32)
+T 1463776711 18<bluss18>	it doesn't matter so much
+T 1463776735 18<cite-reader18>	&mut W where W: Writer is weird.
+T 1463776754 18<cite-reader18>	The other form is strictly more general, and it's what all of std uses.
+T 1463776779 18<bluss18>	std::io::copy uses the latter
+T 1463776792 18<cite-reader18>	Okay, almost all of std.
+T 1463776813 18<aphistic18>	bluss: bleh, so it appears it's a perfect storm of a lib i wrote and missing some declarations in a bin that uses it and neither are open source so i can't make it available for troubleshooting =/
+T 1463776829 18<cite-reader18>	Anyway this is maximally generic. https://is.gd/UCpTt4
+T 1463776840 18<aphistic18>	if i remove the extern crate for the one i wrote it gives the correct error message
+T 1463776894 24*	Jimmio92 (Jim@moz-ji6aiv.mycingular.net24) has left
+T 1463776907 18<Highwaybobbery18>	sweet! thanks again! Looks like it's time to read more about type hints and functions!
+T 1463776977 23*	recurrence (recurrence@moz-0r0dje.bchsia.telus.net23) has joined
+T 1463777130 23*	sifton (sifton@moz-fhv.mjm.190.192.IP23) has joined
+T 1463777149 18<bluss18>	W: Write is a trait bound (type parameter W, trait Write)
+T 1463777506 23*	ssebastianj__ (ssebastianj@moz-5t0.6lv.90.181.IP23) has joined
+T 1463777523 23*	durka42 (durka42@moz-c5p.jet.130.158.IP23) has joined
+T 1463777544 24*	chain_chan has quit (Ping timeout: 121 seconds)
+T 1463777609 24*	saml_ has quit (Connection closed)
+T 1463777664 23*	chain_chan (chainChan@moz-q1cbvj.ip.veracitynetworks.com23) has joined
+T 1463777677 23*	mib_o3iosn (Mibbit@moz-vv5125.dynamic.mtsallstream.net23) has joined
+T 1463777691 24*	ssebastianj_ has quit (Ping timeout: 121 seconds)
+T 1463777714 23*	makufiru (uid67373@moz-78803c.tooting.irccloud.com23) has joined
+T 1463777727 18<mib_o3iosn18>	What's the idiomatic way of getting current time, to seed a random number generator?
+T 1463777769 24*	nercury has quit (Quit: ZzzzzZzzZzzzZzZzzZ)
+T 1463777800 18<cite-reader18>	Must you use the current time?
+T 1463777829 18<cite-reader18>	It's almost always better to seed with OS-provided randomness.
+T 1463777830 18<mib_o3iosn18>	any seed will do I guess, it just has to be different every time it runs
+T 1463777832 23*	curmet (Mibbit@moz-0vvtpd.dynamicip.rima-tde.net23) has joined
+T 1463777852 24*	curmet has quit (Quit: http://www.mibbit.com ajax IRC Client)
+T 1463777871 18<makufiru18>	that's not very random then
+T 1463777883 24*	saimen has quit (Ping timeout: 121 seconds)
+T 1463777887 18<makufiru18>	I think you're trying to achieve uniqueness? not randomness?
+T 1463777923 18<cite-reader18>	Well. Could be a simulation or some kind.
+T 1463778010 24*	junqed has quit (Ping timeout: 121 seconds)
+T 1463778020 18<mib_o3iosn18>	it's just a simple ascii game, currently the rng numbers are the same every time I run it
+T 1463778044 18<mib_o3iosn18>	just looking for an equivalent to srand(time(NULL))
+T 1463778077 18<steveklabnik18>	iirc the rand crate seeds it for you
+T 1463778109 18<mib_o3iosn18>	I'm not using that crate
+T 1463778113 20<lokien>30	how to get the tail of a string? eg tail("foo") -> "oo"
+T 1463778160 18<durka4218>	playbot: std::time::SystemTime::now().duration_since(std::time::UNIX_EPOCH)
+T 1463778161 -18playbot/22#rust-beginners-	Ok(Duration { secs: 1463778358, nanos: 691645533 })
+T 1463778179 18<durka4218>	playbot: let s = "foo"; &s[1..]
+T 1463778180 -18playbot/22#rust-beginners-	"oo"
+T 1463778186 20<lokien>30	durka42: ty
+T 1463778186 19<steveklabnik>	lokien: depends on what you mean by the head... bytes, chars, grapheme clusters....
+T 1463778193 18<steveklabnik18>	durka42's solution only works for bytes
+T 1463778197 18<durka4218>	true that
+T 1463778219 20<lokien>30	steveklabnik: oh, I.. don't know? it's a &str
+T 1463778222 18<durka4218>	playbot: let s = "foo"; s.chars().skip(1).collect::<String>()
+T 1463778224 -18playbot/22#rust-beginners-	"oo"
+T 1463778232 24*	sifton has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+T 1463778234 19<steveklabnik>	lokien: sure, but this is an application-level quesiton
+T 1463778237 18<steveklabnik18>	you can do all three with a 7str
+T 1463778244 20<lokien>30	steveklabnik: chars then
+T 1463778275 18<steveklabnik18>	durka42's second suggestion is one way
+T 1463778302 18<Void718>	 let s = "foo"; &s[6..]
+T 1463778303 18<durka4218>	or without reallocating I gues
+T 1463778304 18<durka4218>	s
+T 1463778310 20<lokien>30	anything less verbose?
+T 1463778311 18<Void718>	playbot: let s = "foo"; &s[6..]
+T 1463778312 -18playbot/22#rust-beginners-	thread '<main>' panicked at 'assertion failed: begin <= end', ../src/libcore/str/mod.rs:1597
+T 1463778312 -18playbot/22#rust-beginners-	note: Run with `RUST_BACKTRACE=1` for a backtrace.
+T 1463778312 -18playbot/22#rust-beginners-	playpen: application terminated with error code 101
+T 1463778326 18<durka4218>	playbot: let s = "foo"; &s[s.char_indices().next().unwrap()..]
+T 1463778327 -18playbot/22#rust-beginners-	<anon>:9:25: 9:62 error: the trait `core::ops::Index<core::ops::RangeFrom<(usize, char)>>` is not implemented for the type `str` [E0277]
+T 1463778327 -18playbot/22#rust-beginners-	<anon>:9         let s = "foo"; &s[s.char_indices().next().unwrap()..]
+T 1463778327 -18playbot/22#rust-beginners-	output truncated; full output at: http://bit.ly/1qzz4bj
+T 1463778332 18<durka4218>	er, something like that :p
+T 1463778348 18<durka4218>	there's not a concise way to write the chars version
+T 1463778364 18<durka4218>	just hide it behind a nice function
+T 1463778370 20<lokien>30	well then
+T 1463778371 20<lokien>30	thank you
+T 1463778377 23*	donV (uwe@moz-t5l.ude.224.91.IP23) has joined
+T 1463778482 23*	ivesen (ivesen@moz-so8.auo.44.37.IP23) has joined
+T 1463778525 23*	sifton (sifton@moz-fhv.mjm.190.192.IP23) has joined
+T 1463778560 23*	Weavel (IceChat9@moz-dvhmnc.elisa-laajakaista.fi23) has joined
+T 1463778600 18<mib_o3iosn18>	durka42: Thanks, that works great
+T 1463778698 24*	chain_chan has quit (Connection closed)
+T 1463778709 24*	28ubsan__ is now known as 18ubsan
+T 1463778715 23*	junqed (junqed@moz-o59.9fp.70.178.IP23) has joined
+T 1463778742 23*	junqed_ (junqed@moz-o59.9fp.70.178.IP23) has joined
+T 1463778755 24*	mib_o3iosn has quit (Quit: http://www.mibbit.com ajax IRC Client)
+T 1463778767 24*	sifton has quit (Ping timeout: 121 seconds)
+T 1463778811 23*	nercury (nercury@moz-ngr949.static.zebra.lt23) has joined
+T 1463778833 23*	chain_chan (chainChan@moz-q1cbvj.ip.veracitynetworks.com23) has joined
+T 1463778948 23*	ubsan_ (ubsan@moz-d075a6.5h7h.485o.fb90.2607.IP23) has joined
+T 1463778957 24*	junqed has quit (Ping timeout: 121 seconds)
+T 1463778968 23*	ubsan__ (ubsan@moz-cc6.3fu.114.66.IP23) has joined
+T 1463779043 24*	danielrh (Mibbit@moz-6pp.nm7.185.208.IP24) has left
+T 1463779071 24*	ubsan has quit (Ping timeout: 121 seconds)
+T 1463779095 24*	chain_chan has quit (Connection closed)
+T 1463779110 23*	ubsan (ubsan@moz-cc6.3fu.114.66.IP23) has joined
+T 1463779147 24*	Weavel has quit (Quit: Give a man a fish and he will eat for a day. Teach him how to fish, and he will sit in a boat and drink beer all day)
+T 1463779233 24*	ubsan__ has quit (Ping timeout: 121 seconds)
+T 1463779352 24*	ubsan has quit (Ping timeout: 121 seconds)
+T 1463779667 19*	Now talking on 22#rust-beginners
+T 1463779667 22*	Topic for 22#rust-beginners is: Beginner's Rust discussion, unlogged. Ask away! | Book  https://doc.rust-lang.org/book/ | Playground  https://play.rust-lang.org | Forum  https://users.rust-lang.org | Conduct  https://www.rust-lang.org/conduct.html
+T 1463779667 22*	Topic for 22#rust-beginners set by 26niconii!nicole@moz-90oat7.midco.net (24Tue May 17 01:23:39 2016)
+T 1463779676 24*	lokien has quit (Connection closed)
+T 1463779695 23*	ubsan_ (ubsan@moz-bftt4d.5h7h.485o.fb90.2607.IP23) has joined
+T 1463779906 24*	ubsan has quit (Ping timeout: 121 seconds)
+T 1463779955 23*	makoLine (mako@moz-mqc4hl.flip.co.nz23) has joined
+T 1463780035 24*	creativcoder has quit (Ping timeout: 121 seconds)
+T 1463780049 24*	recurrence has quit (Ping timeout: 121 seconds)
+T 1463780075 23*	staticassert (Mibbit@moz-bb6mst.ma.comcast.net23) has joined
+T 1463780090 24*	moosnat has quit (Quit: Leaving)
+T 1463780195 24*	cpup has quit (Ping timeout: 121 seconds)
+T 1463780257 23*	cpup (cpup@moz-oc1.ktm.218.32.IP23) has joined
+T 1463780392 23*	recurrence (recurrence@moz-0r0dje.bchsia.telus.net23) has joined
+T 1463780610 23*	bjz (bjz@moz-puppgq.tpgi.com.au23) has joined
+T 1463780677 24*	Altazimuth has quit (Ping timeout: 121 seconds)
+T 1463780716 24*	junqed_ has quit (A TLS packet with unexpected length was received.)
+T 1463780769 23*	solenodic (solenodic@moz-43p.to9.42.72.IP23) has joined
+T 1463780989 18<zmanji18>	is there anything special about the new method on structs?
+T 1463780998 18<durka4218>	nope
+T 1463781000 18<durka4218>	it's just a convention
+T 1463781005 24*	recurrence has quit (Ping timeout: 121 seconds)
+T 1463781025 23*	cornelius (Mibbit@moz-mh0.ukj.141.81.IP23) has joined
+T 1463781027 24*	ubsan_ has quit (Connection closed)
+T 1463781034 23*	311BCHWBZ (ubsan@moz-92sbjt.wa.comcast.net23) has joined
+T 1463781034 24*	cornelius has quit (Quit: http://www.mibbit.com ajax IRC Client)
+T 1463781035 23*	557AAK114 (ubsan@moz-92sbjt.wa.comcast.net23) has joined
+T 1463781038 18<zmanji18>	is there a recommended pattern for constraining construction of a struct? Like return an error or panic if an integer value is below 0 for example
+T 1463781063 18<panicbit18>	Returning a Result is a nice way
+T 1463781068 18<panicbit18>	Or Option
+T 1463781113 18<Aaronepower18>	zmanji: if x < 0 {Err(BelowZero)} else {Struct(x)}
+T 1463781118 23*	ssebastianj_ (ssebastianj@moz-32j.b8o.110.181.IP23) has joined
+T 1463781149 18<Aaronepower18>	Where BelowZero is some sort of enum listing all your errors.
+T 1463781165 18<Aaronepower18>	else {Ok(Struct(x))}*
+T 1463781193 24*	28557AAK114 is now known as 18ubsan
+T 1463781227 24*	cpup has quit (Ping timeout: 121 seconds)
+T 1463781240 18<Aaronepower18>	zmanji: Also you could have a seperate struct like StructBuilder, which can have values passed to it, and then it does the value checking.
+T 1463781245 23*	recurrence (recurrence@moz-0r0dje.bchsia.telus.net23) has joined
+T 1463781279 23*	cpup (cpup@moz-5oj.ktm.218.32.IP23) has joined
+T 1463781288 24*	311BCHWBZ has quit (Ping timeout: 121 seconds)
+T 1463781311 24*	ssebastianj__ has quit (Ping timeout: 121 seconds)
+T 1463781346 18<Aaronepower18>	That'd allow you to have it so the actual struct doesn't have any logic for doing value checking, and you can assume all the values it contains are valid.
+T 1463781420 23*	ubsan_ (ubsan@moz-92sbjt.wa.comcast.net23) has joined
+T 1463781472 18<staticassert18>	Aaronepower: Yeah, builder pattern is a nice way to do that.
+T 1463781517 23*	Sgeo (Sgeo@moz-cqm03c.dyn.optonline.net23) has joined
+T 1463781701 24*	kkus has quit (Ping timeout: 121 seconds)
+T 1463781714 18<alexm18>	for integer parameters, couldn't you accept only unsigned types?
+T 1463781728 18<alexm18>	for your constructor, zmanji 
+T 1463781759 18<alexm18>	Rust would then fail to build if you pass a signed type
+T 1463781767 18<alexm18>	then you'd deal with it outside the constructor
+T 1463781885 18<fqtw18>	when i put "use foo::Bar;" in a module, where Bar is an enum, and then in a function body i put "use Bar::*;", the compiler complains, why?
+T 1463781897 18<fqtw18>	why do i have to use the long name?
+T 1463781897 18<steveklabnik18>	how does it complain
+T 1463781899 18<steveklabnik18>	win 24
+T 1463781911 18<fqtw18>	maybe missing extern crate Bar
+T 1463781932 18<mbrubeck18>	fqtw: "use" always takes a full path
+T 1463781940 18<mbrubeck18>	You can do "use self::Bar" or "use foo::Bar;"
+T 1463781942 18<fqtw18>	"use self::Bar::*;" also doesnt work
+T 1463781946 18<zmanji18>	alexm: agreed its just an example
+T 1463781950 18<steveklabnik18>	hm
+T 1463781959 24*	oln has quit (A TLS packet with unexpected length was received.)
+T 1463781962 18<fqtw18>	mbrubeck: error: unresolved import
+T 1463781965 18<fqtw18>	with self
+T 1463781969 18<zmanji18>	Aaronepower: thanks for the hint, is there a macro/crate out there I can use to automatically make builders like AutoValue in Java?
+T 1463781980 18<fqtw18>	Could not find `Bar` in `baz`
+T 1463782005 18<fqtw18>	mbrubeck: why doesnt it work?
+T 1463782006 18<mbrubeck18>	fqtw: Hmm, might only work if the module has `pub use foo::Bar;`
+T 1463782007 24*	cpup has quit (Ping timeout: 121 seconds)
+T 1463782012 18<fqtw18>	why tho?
+T 1463782017 24*	durka42 has quit (Client exited)
+T 1463782024 18<fqtw18>	it should work when its private too
+T 1463782032 18<steveklabnik18>	glob imports don't import private things
+T 1463782062 18<fqtw18>	why not?
+T 1463782070 18<mbrubeck18>	Even without a glob import I don't think you can import a private `use`
+T 1463782084 18<fqtw18>	mbrubeck: why not?
+T 1463782089 18<fqtw18>	it should be possible
+T 1463782093 18<steveklabnik18>	iirc, it's to reduce conflicts
+T 1463782106 18<steveklabnik18>	but i don't remember
+T 1463782113 18<steveklabnik18>	those behaviors were decided a really long time ago
+T 1463782119 18<mbrubeck18>	https://github.com/rust-lang/rust/issues/23157 is about globs specifically
+T 1463782120 23*	cpup (cpup@moz-44a.ktm.218.32.IP23) has joined
+T 1463782167 18<mbrubeck18>	but even in non-glob cases like this there's a difference between `use` and `pub use` if you try to re-import from the `use`d name: https://is.gd/aM5VYx
+T 1463782183 24*	zhoeon has quit (Ping timeout: 121 seconds)
+T 1463782299 18<fqtw18>	mbrubeck: but it should not cause issues when importing from the outer scope
+T 1463782463 19*	Now talking on 22#rust-beginners
+T 1463782463 22*	Topic for 22#rust-beginners is: Beginner's Rust discussion, unlogged. Ask away! | Book  https://doc.rust-lang.org/book/ | Playground  https://play.rust-lang.org | Forum  https://users.rust-lang.org | Conduct  https://www.rust-lang.org/conduct.html
+T 1463782463 22*	Topic for 22#rust-beginners set by 26niconii!nicole@moz-90oat7.midco.net (24Tue May 17 01:23:39 2016)
+T 1463782518 18<mbrubeck18>	fqtw: Yeah, I agree.  This is kind of a quirky rule, in my opinion.

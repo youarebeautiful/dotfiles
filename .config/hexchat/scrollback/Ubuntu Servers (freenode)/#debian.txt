@@ -1,0 +1,150 @@
+T 1463780511 19*	Now talking on 22#debian
+T 1463780511 22*	Topic for 22#debian is: Debian 8 Jessie released! /msg dpkg jessie ; /msg dpkg wheezy->jessie ; /msg  dpkg install jessie | current point releases: /msg dpkg 8.4; /msg dpkg 7.10 | NO FLOOD: /msg dpkg paste | /msg bots NOT people | offtopic:  #debian-offtopic | testing/unstable: #debian-next (irc.oftc.net) | don't comment on spam in here, move to #debian-offtopic
+T 1463780511 22*	Topic for 22#debian set by 26jelly!jelly@pdpc/supporter/active/jelly (24Wed May  4 11:54:46 2016)
+T 1463780511 -18ChanServ-	[#debian] Welcome to #Debian. This is a discussion channel; if you have a question about Debian GNU/Linux, ask and we will try our best to answer it. Newcomers should read the channel's guidelines by typing "/msg dpkg guidelines". Please do not paste in the channel; use #flood instead. Thank you.
+T 1463780511 22*	Channel 22#debian url: 24http://www.debian.org
+T 1463780543 20<lokien>30	hey guys, I have a brand new computer and I need a stable distribution for developing in rust. will debian be a good fit?
+T 1463780551 23*	kmo (~Kris@cpe-24-59-69-132.twcny.res.rr.com23) has joined
+T 1463780552 18<dimitry718>	ipatrol, done, it doesn't show it
+T 1463780558 18<markybob18>	ryouma: did you build it yourself?
+T 1463780563 18<dimitry718>	ipatrol, I have this:         listen-on { 172.18.8.6; 192.168.1.95; };
+T 1463780571 18<FinalX18>	dimitry7: are you sure it's listening?
+T 1463780575 24*	pantaa has quit (Read error: Connection reset by peer)
+T 1463780576 18<FinalX18>	lsof -ni
+T 1463780580 24*	murfjr has quit (Ping timeout: 260 seconds)
+T 1463780588 18<dimitry718>	FinalX, ok let me pastebin
+T 1463780591 23*	awwal (~awwal@199.241.132.8423) has joined
+T 1463780593 23*	wigust (~Oleg@ppp78-37-150-37.pppoe.avangarddsl.ru23) has joined
+T 1463780601 23*	roylaprattep (~roylaprat@24.212.110.11123) has joined
+T 1463780601 24*	roylaprattep has quit (Changing host)
+T 1463780601 23*	roylaprattep (~roylaprat@unaffiliated/roylaprattep23) has joined
+T 1463780620 18<dimitry718>	FinalX, see: http://paste.debian.net/689047/
+T 1463780622 24*	MrFrood has quit (Ping timeout: 276 seconds)
+T 1463780663 18<FinalX18>	I only see it listen on 192.168.1.95 in there, at the bottom
+T 1463780670 24*	kmo has quit (Client Quit)
+T 1463780673 18<FinalX18>	you need to look for :domain there
+T 1463780673 24*	awwal (~awwal@199.241.132.8424) has left
+T 1463780677 18<dimitry718>	FinalX, and see: http://paste.debian.net/689048/
+T 1463780685 24*	z0ran has quit (Ping timeout: 260 seconds)
+T 1463780694 23*	kmo (~Kris@cpe-24-59-69-132.twcny.res.rr.com23) has joined
+T 1463780696 18<dimitry718>	ohhh right
+T 1463780703 18<FinalX18>	of course, because localhost is not 192.168.1.95 but 127.0.0.1 / ::1
+T 1463780709 18<FinalX18>	and it's not listening on it
+T 1463780715 18<dimitry718>	oh my god!
+T 1463780717 18<dimitry718>	you are right!
+T 1463780718 24*	MechanicalPirate has quit (Ping timeout: 244 seconds)
+T 1463780727 18<FinalX18>	you'll probably have more luck with: nmap -sU -p 53 192.168.1.95
+T 1463780757 23*	panicbit (~panicbit@p57BC711F.dip0.t-ipconnect.de23) has joined
+T 1463780781 23*	MechanicalPirate (~Mechanica@unaffiliated/mechanicalpirate23) has joined
+T 1463780803 18<dimitry718>	FinalX, done! it resolves now :)
+T 1463780809 24*	kmo has quit (Client Quit)
+T 1463780811 18<dimitry718>	okay let me do ti
+T 1463780812 18<dimitry718>	it
+T 1463780817 23*	Bae (~GitGud@unaffiliated/gitgud23) has joined
+T 1463780834 23*	kmo (~Kris@cpe-24-59-69-132.twcny.res.rr.com23) has joined
+T 1463780843 18<dimitry718>	FinalX, 53/udp open  domain
+T 1463780846 18<dimitry718>	thank you!! :)
+T 1463780914 18<dimitry718>	FinalX, do you know what i notice? that it is slow responding
+T 1463780932 19<ipatrol>	lokien: Debian usually makes a great environment for development
+T 1463780945 23*	grimsley (~grimsley@2602:306:319e:c390:c00:e2c9:98c5:da5c23) has joined
+T 1463780957 20<lokien>30	ipatrol: wouldn't it be too outdated though? rust is a young language
+T 1463780959 23*	barto (~Freddy@ayacucho.vicepresidencia.gob.bo23) has joined
+T 1463780972 20<lokien>30	I thought about using debian testing as a rolling release
+T 1463780984 24*	kmo has quit (Client Quit)
+T 1463780999 19<ipatrol>	lokien: I'm pretty sure the stable repository already includes plenty of Rust development packages
+T 1463780999 23*	pyface (~pyface@about/security/contributor/pyface23) has joined
+T 1463781007 23*	kmo (~Kris@cpe-24-59-69-132.twcny.res.rr.com23) has joined
+T 1463781007 18<ipatrol18>	and there are backports too
+T 1463781008 24*	kmo has quit (Max SendQ exceeded)
+T 1463781008 18<ryouma18>	markybob: no, just enabled backports
+T 1463781028 18<ryouma18>	markybob: and apt-get-install
+T 1463781035 23*	kmo (~Kris@cpe-24-59-69-132.twcny.res.rr.com23) has joined
+T 1463781037 18<TomTomTosch18>	,checkbackport rustc
+T 1463781039 24*	DarkDevil has quit (Ping timeout: 240 seconds)
+T 1463781043 20<lokien>30	ipatrol: oh well, there is rust 1.8 in the packages! thank you
+T 1463781043 18<judd18>	Backporting package rustc in sid→jessie/amd64: unsatisfiable build dependencies: Build-Depends: antlr4, llvm-3.7-dev, llvm-3.7-tools.
+T 1463781050 18<grimsley18>	Bit of a silly question but why doesn't Debian include leafpad as a default text editor when installing lxqt (through testing)?
+T 1463781066 20<lokien>30	btw, do you prefer aptitude over apt-get? or something else?
+T 1463781088 19<TomTomTosch>	lokien: building it on stable will not be easy. there is no package in stable.
+T 1463781100 18<markybob18>	i'd donate $500 to debian if people started reading the /topic
+T 1463781103 24*	kmo has quit (Client Quit)
+T 1463781103 20<lokien>30	TomTomTosch: oops I looked at stretch
+T 1463781116 24*	well_laid_lawn has quit (Quit: thisisapartmessage)
+T 1463781119 23*	Otis (~coffee@unaffiliated/ridout23) has joined
+T 1463781127 19<TomTomTosch>	lokien: not sure how well the tarball from rust-lang.org works.
+T 1463781128 23*	kmo (~Kris@cpe-24-59-69-132.twcny.res.rr.com23) has joined
+T 1463781129 24*	kmo has quit (Max SendQ exceeded)
+T 1463781156 23*	kmo (~Kris@cpe-24-59-69-132.twcny.res.rr.com23) has joined
+T 1463781160 20<lokien>30	TomTomTosch: usually we get it with the rustup script
+T 1463781191 24*	plasticle has quit (Remote host closed the connection)
+T 1463781198 19<TomTomTosch>	lokien: no idea about rust. just saying that there is no package and the one in sid does not build on jessie.
+T 1463781208 24*	kmo has quit (Client Quit)
+T 1463781218 23*	DarkDevil (evil@in.the.name.of.god.jp23) has joined
+T 1463781228 20<lokien>30	TomTomTosch: thank you then
+T 1463781269 23*	daegontaven (~daegon@greycadet/staff/daegontaven23) has joined
+T 1463781280 24*	ExoUNX has quit (Quit: Leaving)
+T 1463781286 23*	roge (~roge@91.185.179.15823) has joined
+T 1463781293 19<TomTomTosch>	lokien: good luck. the thing with debian stable is that new packages get only included through backports. it has its pros and cons.
+T 1463781305 23*	allorder (~allorder@unaffiliated/allorder23) has joined
+T 1463781310 23*	radw (c6e45a12@gateway/web/freenode/ip.198.228.90.1823) has joined
+T 1463781342 20<lokien>30	TomTomTosch: will I have any issues with my hardware though? no fancy gpu
+T 1463781451 19<TomTomTosch>	lokien: official debian does not include non-free firmware so wifi is a problem sometimes. graphics work fine most of the time.
+T 1463781469 20<lokien>30	TomTomTosch: I'll use the nonfree iso
+T 1463781480 22*	26debhelper sets channel limit to 241678
+T 1463781504 24*	Tegu (kekkont1@gateway/shell/tkk.fi/x-dpjaouoqjgllffdn24) has left (",")
+T 1463781542 23*	cdown (~cdown@213.205.251.7523) has joined
+T 1463781568 19<TomTomTosch>	lokien: should be fine then. if not, you know where to find us :P
+T 1463781591 23*	branau (~billy@187.132.33.4423) has joined
+T 1463781600 23*	cyan__ (~cyan@d153-117.icpnet.pl23) has joined
+T 1463781608 20<lokien>30	TomTomTosch: okay, thank you very much! I'm preparing my pendrive :D
+T 1463781615 18<radw18>	hello again
+T 1463781619 24*	DarkDevil has quit (Ping timeout: 240 seconds)
+T 1463781660 18<ipatrol18>	...why .jp?
+T 1463781663 24*	cmhobbs has quit (Ping timeout: 240 seconds)
+T 1463781686 23*	sifeic (~sifeic@c-75-71-117-103.hsd1.co.comcast.net23) has joined
+T 1463781693 24*	kus has quit (Ping timeout: 240 seconds)
+T 1463781699 23*	DarkDevil (evil@in.the.name.of.god.jp23) has joined
+T 1463781701 24*	kpease has quit (Quit: Textual IRC Client: www.textualapp.com)
+T 1463781742 24*	joobus has quit (Ping timeout: 252 seconds)
+T 1463781786 23*	z0ran (~z0ran@77.105.40.9823) has joined
+T 1463781815 23*	Megaf (~Megaf@unaffiliated/megaf23) has joined
+T 1463781834 24*	amcorreia has quit (Ping timeout: 260 seconds)
+T 1463781877 24*	CeBe has quit (Quit: Leaving.)
+T 1463781884 24*	Megaf has quit (Max SendQ exceeded)
+T 1463781894 23*	bollullera (~anuxi@84.120.35.177.dyn.user.ono.com23) has joined
+T 1463781902 23*	Paianni (~sailfish@cpc16-heme9-2-0-cust232.9-1.cable.virginm.net23) has joined
+T 1463781905 24*	Guest70638 has quit (Remote host closed the connection)
+T 1463781916 20<lokien>30	default (aka most supported) DE in debian is gnome, am I right?
+T 1463781944 24*	jpgepetto has quit (Quit: Leaving.)
+T 1463781951 24*	mortn has quit (Quit: Leaving)
+T 1463781953 18<markybob18>	not most supported. default yes. kind of anyway.
+T 1463781960 20<lokien>30	thanks
+T 1463781973 23*	x-ip (~edvm@unaffiliated/x-ip23) has joined
+T 1463781975 23*	Javabean (~Javabean@user-12lmhsj.cable.mindspring.com23) has joined
+T 1463781976 24*	branau (~billy@187.132.33.4424) has left
+T 1463781979 18<Paianni18>	xfce was default for a few months in 2014
+T 1463781987 23*	ocbtec (~ocbtec@dslb-088-075-065-244.088.075.pools.vodafone-ip.de23) has joined
+T 1463781996 24*	ocbtec has quit (Client Quit)
+T 1463782000 18<markybob18>	if you ask a lot of use anything about gnome we won't be able to answer you. myself included.
+T 1463782000 23*	branau (~billy@187.132.33.4423) has joined
+T 1463782004 18<x-ip18>	@seen Katai
+T 1463782009 18<markybob18>	us*
+T 1463782022 23*	ocbtec (~ocbtec@dslb-088-075-065-244.088.075.pools.vodafone-ip.de23) has joined
+T 1463782032 24*	marvn has quit (Quit: Konversation terminated!)
+T 1463782043 20<lokien>30	markybob: I see
+T 1463782065 24*	Almtesh has quit (Remote host closed the connection)
+T 1463782079 24*	Taco has quit (Ping timeout: 240 seconds)
+T 1463782099 24*	DarkDevil has quit (Ping timeout: 240 seconds)
+T 1463782099 24*	ipatrol has quit (Quit: See ya space cowboy)
+T 1463782110 24*	ArchNoob has quit (Ping timeout: 250 seconds)
+T 1463782141 23*	Darcidride (~Darcidrid@ALyon-656-1-699-60.w90-15.abo.wanadoo.fr23) has joined
+T 1463782144 23*	Ticho_ (~Ticho@unaffiliated/ticho23) has joined
+T 1463782157 24*	eL_bamba has quit (Quit: Leaving)
+T 1463782180 23*	DarkDevil (evil@in.the.name.of.god.jp23) has joined
+T 1463782230 18*	PadawanLearner may the force be with you
+T 1463782288 23*	cplemaster (~cplemaste@72.192.73.15323) has joined
+T 1463782294 24*	Paianni has quit (Read error: Connection reset by peer)
+T 1463782295 24*	cdown has quit (Ping timeout: 260 seconds)
+T 1463782300 23*	silverho (~silverhom@c83-252-173-223.bredband.comhem.se23) has joined
+T 1463782304 23*	Paianni (~sailfish@cpc16-heme9-2-0-cust232.9-1.cable.virginm.net23) has joined
+T 1463782349 24*	Ticho has quit (Ping timeout: 276 seconds)

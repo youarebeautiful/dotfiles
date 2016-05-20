@@ -1,0 +1,264 @@
+T 1463774709 18<panicbit>	no, you don't need to collect, especially not after every map
+T 1463774718 18<panicbit>	you can chain them as much as you like
+T 1463774732 18<panicbit>	and you only need to .collect() if you want to create some
+T 1463774742 18<panicbit>	create some structure like Vec<T> out of it
+T 1463774746 18<panicbit>	or a HashMap
+T 1463774779 18<panicbit>	Instead of .collect()ing you could also just iterate over the values using a for loop
+T 1463774800 20<lokien>30	yeah, I know that, maps are neat too though
+T 1463774802 20<lokien>30	anyway
+T 1463774818 20<lokien>30	I want to check if a given string has at least three vowels
+T 1463774835 20<lokien>30	so I created a function, has_vowels(x: &str) -> bool
+T 1463774856 18<panicbit>	str.chars().filter(|c| is_vowel(c)).count() >= 3
+T 1463774857 20<lokien>30	I want to have a smaller function inside of it, call- oh wait a minute actually
+T 1463774874 20<lokien>30	as I thought, there is a is_vowel function implemented already
+T 1463774879 18<panicbit>	is it?
+T 1463774882 18<panicbit>	I don't know
+T 1463774885 20<lokien>30	isn't it?
+T 1463774887 20<lokien>30	let me check
+T 1463774897 18<panicbit>	dunno, I just used is_vowel as a placeholder
+T 1463774985 20<lokien>30	(|c| is_vowel(c)) - is that a closure?
+T 1463774990 18<panicbit>	yup
+T 1463775004 18<panicbit>	|params| body
+T 1463775026 20<lokien>30	so closure can return a type other than its parameter?
+T 1463775028 18<panicbit>	|param: type| -> ReturnType { body }
+T 1463775032 18<panicbit>	is aso possible
+T 1463775035 18<panicbit>	sure
+T 1463775042 18<panicbit>	a closure is just a function
+T 1463775047 20<lokien>30	sweet
+T 1463775050 18<panicbit>	(with some state attached)
+T 1463775056 20<lokien>30	I thought it's something different here
+T 1463775093 18<panicbit>	The full definition would be: `|c: &char| -> bool { is_vowel(c) }`
+T 1463775109 18<panicbit>	you could also make that into a function and use that instead
+T 1463775125 18<panicbit>	in fact, we can jsut pass in that is_vowel function directly
+T 1463775149 18<panicbit>	str.chars().filter(is_vowel).count() >= 3
+T 1463775160 18<panicbit>	(the is_vowel has to accept &char though)
+T 1463775167 20<lokien>30	neat, I'll try to find that
+T 1463775177 18<panicbit>	find what?
+T 1463775185 20<lokien>30	is_vowel
+T 1463775190 18<panicbit>	there is no such fn
+T 1463775194 20<lokien>30	oh
+T 1463775195 18<panicbit>	at least not in std
+T 1463775206 18<panicbit>	but it's trivial to implement, at least for english, isn't it?
+T 1463775245 18<panicbit>	['a', 'e', 'i', 'o', 'u'].contains(c)
+T 1463775333 18<panicbit>	I'd like to point out that the whole chars/filter chain could be optimized a little bit
+T 1463775336 20*	lokien 30stares at it with his mouth open
+T 1463775339 20<lokien>30	I mean
+T 1463775342 20<lokien>30	it's so
+T 1463775343 20<lokien>30	grat
+T 1463775345 18<panicbit>	If the string is very long
+T 1463775345 20<lokien>30	great*
+T 1463775356 18<panicbit>	and the first few characters are vowels
+T 1463775365 20<lokien>30	strings are short, there's just many of them
+T 1463775368 18<panicbit>	then the .count() method will still keep counting
+T 1463775376 18<panicbit>	ok
+T 1463775383 20<lokien>30	thanks man
+T 1463775390 18<panicbit>	you could optimized that using .fold ;)
+T 1463775402 18<panicbit>	-d
+T 1463775403 20<lokien>30	it's foldl behind the scenes, am I right?
+T 1463775413 18<panicbit>	It must be yeah
+T 1463775415 20<lokien>30	folding from the left
+T 1463775417 20<lokien>30	okay
+T 1463775419 18<panicbit>	because of how iterators work
+T 1463775444 18<panicbit>	though, you could probably foldr on DoubleEndedIterators
+T 1463775462 18<panicbit>	(you can take elements from the end there)
+T 1463775500 18*	panicbit checks if itertools has something like that
+T 1463775532 18<panicbit>	nope
+T 1463775537 18<panicbit>	I could implement that =D
+T 1463775557 20<lokien>30	yay, I gave you an idea!
+T 1463775562 20*	lokien 30likes giving people ideas
+T 1463775571 18<panicbit>	People give me ideas all the time =D
+T 1463775588 18<panicbit>	That's how one of my crates came to be
+T 1463775643 20<lokien>30	do I have to type return or is the last expression automatically returned?
+T 1463775647 18<panicbit>	my monster crate contains a few differend kinds of weird little monsters :) https://panicbit.github.io/monster/monster/incubation/index.html
+T 1463775664 18<panicbit>	The last expression is always automatically returned
+T 1463775675 20<lokien>30	looks nice
+T 1463775677 20<lokien>30	yay!
+T 1463775836 20<lokien>30	IT COMPILES
+T 1463775846 18<panicbit>	:3
+T 1463776001 20<lokien>30	tfw you were having a bad day but code makes you happy
+T 1463776010 20<lokien>30	I'll make a second function with a for loop
+T 1463776027 18<panicbit>	TFW you touch JS again
+T 1463776066 20<lokien>30	I only touch rusty metals now
+T 1463776070 18<panicbit>	:D
+T 1463776165 20<lokien>30	I wanna make an accumulator
+T 1463776177 20<lokien>30	'let mut acc: i32' will work?
+T 1463776184 18<panicbit>	 = 0;
+T 1463776186 18<panicbit>	yup
+T 1463776189 20<lokien>30	o-kay
+T 1463776200 18<panicbit>	the type annotation isn't necessarily needed
+T 1463776212 20<lokien>30	yeah, yeah, I forgot I could just initialise it to 0
+T 1463776259 20<lokien>30	importante - do I have to set it back to 0 when I return?
+T 1463776265 20<lokien>30	or it'll go back to 0 automatically
+T 1463776290 18<panicbit>	when you return from that function, then everything in the functions scope stops existing
+T 1463776305 18<panicbit>	when the function is being entered again every line of code is being reran again
+T 1463776321 18<panicbit>	which implies that the variable will be set to 0 again
+T 1463776331 20<lokien>30	I'm excited already
+T 1463776377 18<panicbit>	Also, the variable can't just persist after the function ends because its value only sits on the stack
+T 1463776420 20<lokien>30	good then
+T 1463776427 20<lokien>30	okay I'll switch to i3, brb
+T 1463776433 FiSHLiM plugin unloaded
+T 1463776433 Python interface unloaded
+T 1463776527 20<lokien>30	I'm back again
+T 1463776538 18<panicbit>	What do you use when you don't use i3?
+T 1463776542 20<lokien>30	xfce
+T 1463776545 18<panicbit>	ah
+T 1463776565 20<lokien>30	previously I used bspwm, but I got tired with it
+T 1463776582 20<lokien>30	like, getting 300 things to work before I can actually do something useful
+T 1463776589 18<panicbit>	xD
+T 1463776590 20<lokien>30	i3 is sane by default
+T 1463776595 18<panicbit>	yeah
+T 1463776610 20<lokien>30	bspwm doesn't even handle your keyboard, you need sxhkd for that
+T 1463776615 18<panicbit>	woot
+T 1463776704 20<lokien>30	I mean, hotkeys
+T 1463776707 20<lokien>30	https://github.com/baskerville/sxhkd
+T 1463776722 18<panicbit>	ah k
+T 1463777033 20<lokien>30	I think it's possible to run i3 inside of xfce, actually
+T 1463777037 20<lokien>30	I'll look into that later
+T 1463777055 18<panicbit>	Yeah, you should be able to configure i3 as the wm
+T 1463777781 20<lokien>30	how to get a first char from a string?
+T 1463777795 18<panicbit>	.chars().next()
+T 1463777815 20<lokien>30	does it have side effects?
+T 1463777820 18<panicbit>	no
+T 1463777832 20<lokien>30	what if I'm at last char and I call .next()?
+T 1463777846 18<panicbit>	how?
+T 1463777854 18<panicbit>	.chars() always starts at the beginning
+T 1463777862 20<lokien>30	oh, okay
+T 1463777933 18<panicbit>	I'm going to walk my dog now for a few minutes :)
+T 1463777945 20<lokien>30	okay, have fun!
+T 1463777949 18<panicbit>	Thx
+T 1463777973 18<panicbit>	I'll stay available via phone though
+T 1463777990 20<lokien>30	nah, tell me when you're back
+T 1463778420 18<panicbit>	Where are you from?
+T 1463778469 20<lokien>30	poland
+T 1463778503 20<lokien>30	you?
+T 1463778509 18<panicbit>	Nice :)
+T 1463778510 20<lokien>30	I think germany
+T 1463778512 18<panicbit>	Germany
+T 1463778514 20<lokien>30	see
+T 1463778517 20<lokien>30	:D
+T 1463778555 18<panicbit>	:P
+T 1463778618 20<lokien>30	it's the accent
+T 1463779138 18<panicbit>	back
+T 1463779204 20<lokien>30	nice
+T 1463779271 20<lokien>30	I forgot about eating and had to go for cereal
+T 1463779691 20<lokien_>30	well I remember why I stopped using i3
+T 1463779695 20<lokien_>30	it crashed again
+T 1463779782 18<panicbit>	weird, but even when it crashes it should offer you to reboot it and even restore window positions etc
+T 1463779819 18<panicbit>	And I pretty rarely encoubter i3 crashes
+T 1463779821 20<lokien_>30	welp, even sys rq keys didn't work
+T 1463779830 18<panicbit>	Which distro are you using?
+T 1463779835 20<lokien_>30	ubuntu
+T 1463779843 18<panicbit>	Sounds like a kernel panic then maybe?
+T 1463779856 20<lokien_>30	dunno, everything freezes at random
+T 1463779867 20<lokien_>30	but only when I use tiling wms
+T 1463779875 18<panicbit>	weird
+T 1463779877 20<lokien_>30	maybe that's because I didn't use xfce for too long
+T 1463779890 18<panicbit>	You can't even switch to a VT I assume?
+T 1463779895 20<lokien_>30	anyway, if it keeps crashing, I'll switch my distro
+T 1463779900 20<lokien_>30	nope, nothing
+T 1463779905 18<panicbit>	:/
+T 1463779913 20<lokien_>30	even when I hit capslock on a keyboard, lights don't turn on/off
+T 1463779927 20<lokien_>30	total freeze
+T 1463779950 18<panicbit>	you could probably check the system journal aftee rebooting
+T 1463779965 18<panicbit>	If you're lucky it contains relevant dmesg info
+T 1463779983 20<lokien_>30	where's it?
+T 1463780022 18<panicbit>	you can access it using 'journalctl -k -b1'  IIRV
+T 1463780025 18<panicbit>	IIRC*
+T 1463780065 20<lokien_>30	what distro are you using?
+T 1463780071 18<panicbit>	arch
+T 1463780084 20<lokien_>30	"Specifying boot ID has no effect, no persistent journal was found"
+T 1463780090 18<panicbit>	Ah, you may also want to specify -l
+T 1463780093 18<panicbit>	but in this case
+T 1463780094 20<lokien_>30	you set it up from scratch?
+T 1463780097 18<panicbit>	yup
+T 1463780110 20<lokien_>30	neato
+T 1463780114 18<panicbit>	Weird
+T 1463780133 20<lokien_>30	journalctl -k -b works
+T 1463780138 18<panicbit>	The persistent log doesn't seem to be enabled by default in debian based distros
+T 1463780151 18<panicbit>	-b will give you the log of the current boot though
+T 1463780160 18<panicbit>	-b1 would give you the log of the last boot
+T 1463780178 20<lokien_>30	oh
+T 1463780254 20<lokien_>30	I'd really like an os that just works /:
+T 1463780262 18<panicbit>	So if you want to diagnose this issue with journalctl the next time it happens you'll have to enable the persistent journal
+T 1463780269 18<panicbit>	Buy a mac then ;D
+T 1463780301 20<lokien_>30	too expensive :g
+T 1463780313 18<panicbit>	They are horrible for dev though... (not as much horrible as windows but still horrible)
+T 1463780369 20<lokien_>30	soo linux then
+T 1463780371 18<panicbit>	And with the new linux subsystem fo windows 10 that might even change xD
+T 1463780373 20<lokien_>30	certainly not arch
+T 1463780385 20<lokien_>30	I don't like windows 10, it just feels wrong
+T 1463780389 18<panicbit>	You could try fedora or something
+T 1463780406 20<lokien_>30	ooor debian stable maybe
+T 1463780413 20<lokien_>30	it'd be, you know, stable
+T 1463780418 20<lokien_>30	since it has 30 years
+T 1463780427 18<panicbit>	It might also be horribly outdated
+T 1463780435 18<panicbit>	And not work with your hardware at all xD
+T 1463780441 20<lokien_>30	I'll ask at #debian
+T 1463780444 20<lokien_>30	oh well, good point
+T 1463780450 18<panicbit>	It's worth a try though
+T 1463780477 20<lokien_>30	I'll wait for a next freeze
+T 1463780527 18<panicbit>	I'm not really much of a fan of "release based distributions" anymore
+T 1463780537 18<panicbit>	I like rolling release distros :)
+T 1463780553 20<lokien_>30	me too
+T 1463780563 20<lokien_>30	but, they often don't work :g
+T 1463780569 18<panicbit>	Upgrading to a new release is much lss painful then :P
+T 1463780573 20<lokien_>30	debian testing is rolling though
+T 1463780574 20<lokien_>30	I think
+T 1463780579 18<panicbit>	Yeah somethign like that
+T 1463780595 18<panicbit>	There is a Linux Mint variant that's debian based and rolling release
+T 1463780614 20<lokien_>30	nah, not mint
+T 1463780621 20<lokien_>30	too much "4newbz" stuff
+T 1463780623 18<panicbit>	Which I prefer pretty much over the standard Linux Mint because their upgrade path is reinstalling
+T 1463780736 20<lokien_>30	umm, debian guys ain't interested in my question
+T 1463780755 20<lokien_>30	turns out debian testing is a rolling release
+T 1463780773 20<lokien_>30	why u stalk me
+T 1463780776 18<panicbit>	xD
+T 1463780826 20<lokien_>30	oh, what about good ol gentoo
+T 1463780843 18<panicbit>	eek, too much of a time waster
+T 1463780898 20<lokien_>30	I've heard setting it up is pretty fast now
+T 1463780922 18<panicbit>	Sure, if you use precompiled packages
+T 1463781085 20<lokien_>30	okay, debian has rustc 1.8
+T 1463781112 20<lokien_>30	or not
+T 1463781138 18<panicbit>	just use rustup
+T 1463781150 18<panicbit>	rustup.rs that is
+T 1463781172 20<lokien_>30	yeah, but dependencies
+T 1463781176 20<lokien_>30	let's look at neovim
+T 1463781181 20<lokien_>30	also
+T 1463781183 18<panicbit>	I don't think that debian can keep up with rusts release cycle ;D
+T 1463781254 20<lokien_>30	me neither
+T 1463781279 20<lokien_>30	eh, damn
+T 1463781295 20<lokien_>30	gentoo people are even less interested
+T 1463781390 18<panicbit>	Most communities are so weird :/
+T 1463781411 20<lokien_>30	lisp's one is so freaking hermetic
+T 1463781415 20<lokien_>30	I mean
+T 1463781417 20<lokien_>30	common lisp
+T 1463781417 18<panicbit>	x
+T 1463781419 18<panicbit>	xD
+T 1463781440 20<lokien_>30	you come in there and they're like "HOW DARE YOU INSULT US"
+T 1463781508 18<panicbit>	They probably only talk to people they've shared a cup of alphabet soup with
+T 1463781522 18<panicbit>	Except their albhabet soup also contains a lot of braces :P
+T 1463781553 20<lokien_>30	seems totally like it
+T 1463781594 18<panicbit>	You should think that they are pretty EMBRACING
+T 1463781595 18<panicbit>	xD
+T 1463781602 18*	panicbit will stop now
+T 1463781618 20<lokien_>30	haha!
+T 1463781622 20<lokien_>30	clojure people are cool though
+T 1463781830 20<lokien_>30	now, let's pick a de
+T 1463781842 20<lokien_>30	I'll probably take the default one
+T 1463781872 18<panicbit>	I wonder which one it is
+T 1463781880 18<panicbit>	Should be gnome if they didn't change that
+T 1463781994 20<lokien_>30	oh well this guy didn't tell me the answer but I already said thanks so I can't ask more questions now
+T 1463782028 18<panicbit>	I don't see how that could stop you from asking :)
+T 1463782081 20<lokien_>30	but, if it's default, it'd work
+T 1463782089 20<lokien_>30	oh let me see my bug report, actually
+T 1463782110 20<lokien_>30	because some gnome disks app was showing my ssd was boiling
+T 1463782112 20<lokien_>30	at 99C
+T 1463782118 20<lokien_>30	while it was 30C
+T 1463782122 18<panicbit>	>.>
+T 1463782207 20<lokien_>30	oh a guy fixed it
+T 1463782208 20<lokien_>30	maybe
+T 1463782371 20<lokien_>30	bug still present :x
+T 1463782478 20<lokien>30	yay it works!
+T 1463782493 18<panicbit>	\o/
+T 1463782520 20<lokien>30	I'll still wait 12 years to get it on debian
+T 1463782523 20<lokien>30	but it ws worth it

@@ -1,0 +1,37 @@
+T 1463780836 19*	Now talking on 22#gentoo
+T 1463780836 22*	Topic for 22#gentoo is: Gentoo Linux Support | Can't speak? /j #gentoo-ops | long pastes: dpaste.org | masked by license? http://x.vu/WgxYLs | firmware not loading? http://goo.gl/MzVLBN | perl conflicts? http://goo.gl/n1FMk8 | Be nice! http://xrl.us/kftd | portage-2.3.0_rc1 broken? "emerge -1 repoman"
+T 1463780836 22*	Topic for 22#gentoo set by 26iamben!~iamben@gentoo/contributor/iamben (24Tue May 17 22:44:02 2016)
+T 1463780836 -18ChanServ-	[#gentoo] Welcome to #gentoo || Acceptable Usage Policy @ http://www.gentoo.org/main/en/irc.xml || Keep the language clean || Google is your friend || No bots or scripts that talk || Turn off public away messages || More than three lines to #flood or a pastebin service, no spam!
+T 1463780836 22*	Channel 22#gentoo url: 24http://www.gentoo.org
+T 1463780870 20<lokien>30	hey guys, I have a brand new computer and I need a stable distribution for developing in rust. will gentoo be a good fit?
+T 1463780872 18<p_l18>	ezakimak: you can also use just ESP, one windows partition, one linux (LVM) partition...
+T 1463780890 18<iamben18>	ezakimak: you are overthinking this
+T 1463780913 18<iamben18>	ephemer0l: try asking in #gentoo-kde
+T 1463780945 18<ephemer0l18>	thanks for your time iamben have a great weekend
+T 1463780949 18<ezakimak18>	bbiab. dinner.
+T 1463781198 23*	urbainy (~urbainy@221.222.128.13323) has joined
+T 1463781286 23*	happygilmoregent (~chatzilla@ip24-253-252-74.ok.ok.cox.net23) has joined
+T 1463781335 24*	Stels has quit (Ping timeout: 276 seconds)
+T 1463781338 24*	knutstrut has quit (Ping timeout: 244 seconds)
+T 1463781378 23*	suprovsky1 (~supra@user-94-254-176-72.play-internet.pl23) has joined
+T 1463781380 24*	suprovsky1 (~supra@user-94-254-176-72.play-internet.pl24) has left
+T 1463781473 23*	knutstrut (~knutstrut@unaffiliated/knutstrut23) has joined
+T 1463781491 23*	R0b0t1 (~weechat@unaffiliated/r0b0t123) has joined
+T 1463781542 23*	cdown (~cdown@213.205.251.7523) has joined
+T 1463781563 24*	Tegu (kekkont1@gateway/shell/tkk.fi/x-dpjaouoqjgllffdn24) has left
+T 1463781588 24*	brendel_ has quit (Ping timeout: 246 seconds)
+T 1463781676 24*	asurace has quit (Ping timeout: 252 seconds)
+T 1463781693 24*	kus has quit (Ping timeout: 240 seconds)
+T 1463781709 24*	urbainy has quit (Ping timeout: 252 seconds)
+T 1463781798 24*	brendel has quit (Ping timeout: 250 seconds)
+T 1463781799 24*	m0n0lith has quit (Ping timeout: 260 seconds)
+T 1463781842 24*	toralf has quit (Ping timeout: 276 seconds)
+T 1463781885 23*	Stels (~stels@95.104.195.4023) has joined
+T 1463781907 23*	bollullera (~anuxi@84.120.35.177.dyn.user.ono.com23) has joined
+T 1463782093 23*	asurace (~asurace@ip5b4064c2.dynamic.kabel-deutschland.de23) has joined
+T 1463782194 18<evil_shibe18>	https://www.youtube.com/watch?v=wjOg2kYz9cA
+T 1463782194 18<evil_shibe18>	xD
+T 1463782235 23*	qbasicer (~qbasicer@24-212-220-46.cable.teksavvy.com23) has joined
+T 1463782252 23*	CMoH|notebook (~cipi@unaffiliated/c-moh23) has joined
+T 1463782295 24*	cdown has quit (Ping timeout: 260 seconds)
+T 1463782300 23*	silverho (~silverhom@c83-252-173-223.bredband.comhem.se23) has joined

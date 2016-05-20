@@ -1,0 +1,1511 @@
+./captain: eval: line 172: unexpected EOF while looking for matching `}'
+./captain: eval: line 173: syntax error: unexpected end of file
+./captain: eval: line 172: unexpected EOF while looking for matching `}'
+./captain: eval: line 173: syntax error: unexpected end of file
+./captain: eval: line 172: unexpected EOF while looking for matching `}'
+./captain: eval: line 173: syntax error: unexpected end of file
+./captain: eval: line 172: unexpected EOF while looking for matching `}'
+./captain: eval: line 173: syntax error: unexpected end of file
+./captain: eval: line 172: unexpected EOF while looking for matching `}'
+./captain: eval: line 173: syntax error: unexpected end of file
+./captain: eval: line 172: unexpected EOF while looking for matching `}'
+./captain: eval: line 173: syntax error: unexpected end of file
+./captain: eval: line 172: unexpected EOF while looking for matching `}'
+./captain: eval: line 173: syntax error: unexpected end of file
+./captain: line 239: xtitle: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 14: acpi: command not found
+bash: line 4: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 5: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+bash: line 4: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 5: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=bash: line 14: acpi: command not found
+
+awk: line 1: syntax error at or near ]
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 14: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 14: acpi: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+bash: line 14: acpi: command not found
+bash: line 5: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+bash: line 5: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+awk: line 1: bash: line 14: acpi: command not found
+regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 14: acpi: command not found
+bash: line 5: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 14: acpi: command not found
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 5: mpc: command not found
+bash: line 4: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 14: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 5: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: acpi: command not found
+awk: line 1: bash: line 4: mpc: command not found
+regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 14: acpi: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+cat: bash: line 4: acpi: command not found
+'/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 14: acpi: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+cat: '/sys/class/net/wlp*/operstate'bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+: No such file or directory
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate'bash: line 4: acpi: command not found
+: No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: mpc: command not found
+bash: line 14: acpi: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: acpi: command not found
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 14: acpi: command not found
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 14: acpi: command not found
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: acpi: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+bash: line 5: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+bash: line 4: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: acpi: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate'bash: line 5: mpc: command not found
+: No such file or directory
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+bash: line 5: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+bash: line 5: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: acpi: command not found
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+bash: line 14: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate'bash: line 5: mpc: command not found
+: No such file or directory
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: acpi: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+cat: bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+'/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+cat: '/sys/class/net/wlp*/operstate'bash: line 4: mpc: command not found
+: No such file or directory
+bash: line 4: acpi: command not found
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: mpc: command not found
+bash: line 14: acpi: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: mpc: command not found
+bash: line 14: acpi: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+bash: line 4: acpi: command not found
+bash: line 14: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: mpc: command not found
+bash: line 14: acpi: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+cat: '/sys/class/net/wlp*/operstate'bash: line 4: mpc: command not found
+: No such file or directory
+bash: line 4: acpi: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+bash: line 4: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+cat: '/sys/class/net/wlp*/operstate'bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+: No such file or directory
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 14: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+bash: line 5: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+bash: line 5: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 5: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+bash: line 4: acpi: command not found
+bash: line 14: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: acpi: command not found
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+cat: '/sys/class/net/wlp*/operstate'bash: line 4: mpc: command not found
+: No such file or directory
+bash: line 4: acpi: command not found
+bash: line 14: acpi: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+bash: line 5: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+bash: line 5: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+bash: line 5: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+cat: bash: line 5: mpc: command not found
+'/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: acpi: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 14: acpi: command not found
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+cat: '/sys/class/net/wlp*/operstate'bash: line 4: acpi: command not found
+: No such file or directory
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+cat: bash: line 4: mpc: command not found
+'/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: acpi: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 14: acpi: command not found
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate'bash: line 5: mpc: command not found
+: No such file or directory
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 5: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+bash: line 4: acpi: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: mpc: command not found
+cat: '/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 4: acpi: command not found
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+bash: line 4: acpi: command not found
+cat: bash: line 4: mpc: command not found
+'/sys/class/net/wlp*/operstate': No such file or directory
+bash: line 5: mpc: command not found
+bash: line 14: acpi: command not found
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]
+awk: line 1: regular expression compile failed (bad class -- [], [^] or [)
+[=
+awk: line 1: syntax error at or near ]

@@ -1,0 +1,8 @@
+app.autostart-configured=true
+storage.last-location="/home/me/.cache/spotify/Storage"
+app.autostart-mode=""
+autologin.username="sarnitto"
+autologin.saved_credentials="{\"sarnitto\":[\"sarnitto\",\"33fLK7hnumuBiEjgCrCgtFt5f84Aw9Zq4zIHC5h/OLx/C3KcxNhExt7YfEb5fRWw\"]}"
+core.clock_delta=0
+autologin.canonical_username="sarnitto"
+autologin.blob="33fLK7hnumuBiEjgCrCgtFt5f84Aw9Zq4zIHC5h/OLx/C3KcxNhExt7YfEb5fRWw"
